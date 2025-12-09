@@ -5,20 +5,36 @@
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
+/* henter daisy UI */
+@plugin "daisyui";
+
 @theme {
   /* Her tilføjes theme variable // tokens */
 
-  /*Farver */
-  --color-lilla-500: #190021;
-  --color-pink-500: #ff99f1;
-  --color-blå-500: #5989ff;
-  --color-hvid-500: #ffffff;
-  --color-rød-500: #ff3e43;
-  --color-lysegrøn-600: #e5ffbf;
+  /*FARVER */
+
+  /* pink */
+  --color-brand: #ff99f1;
+
+  /* lilla */
+  --color-ink: #190021;
+
+  /* blå */
+  --color-bold: #5989ff;
+  --color-bold-700: #024fb6;
+  --color-bold-900: #001d4c;
+
+  /* lysegrøn */
+  --color-spring: #e5ffbf;
+
+  /* hvid */
+  --color-paper: #ffffff;
 
   /*Typografi */
   --font-display: "Inter", sans-serif;
-  --font-sans: "Quicksand", sans-serif;
+
+  /*SPACING */
+  --spacing-sectiontop: 224px;
 }
 
 @layer base {
