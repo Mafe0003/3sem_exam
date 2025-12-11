@@ -36,6 +36,18 @@
 
   /*SPACING */
   --spacing-sectiontop: 224px;
+
+  /*Infinite scroll animation på banneren*/
+  --animate-infinite-scroll: infinite-scroll 25s linear infinite;
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @layer base {
