@@ -1,36 +1,37 @@
 ---
 // Henter parametrene fra Astro.props
-const { htmlheading="h2", size="large", font="display", color="brand", stylingclasses=""} = Astro.props; 
+const { htmlheading = "h2", size = "large", font = "display", color = "brand", stylingclasses = "" } = Astro.props;
 const Htmlheading = htmlheading;
- 
+
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.
 const sizeClasses = {
-// h1
-"x-large": "text-5xl md:text-7xl lg:text-9xl font-bold",
+  // h1
+  xlarge: "text-5xl md:text-7xl lg:text-9xl font-bold pb-6 uppercase",
 
-// h2
-"large": "text-4xl md:text-6xl lg:text-8xl font-bold",
+  // h2
+  large: "text-4xl md:text-6xl lg:text-8xl font-bold pb-5 uppercase",
 
-// h3
-"medium": "text-3xl md:text-5xl lg:text-6xl font-semibold",
+  // h3
+  medium: "text-3xl md:text-5xl lg:text-6xl font-semibold pb-4",
 
-// h4
-"small": "text-2xl md:text-4xl lg:text-5xl",
+  // h4
+  small: "text-2xl md:text-4xl lg:text-5xl pb-3",
 
-// h5
-"x-small": "text-lg md:text-2xl lg:text-4xl",
+  // h5
+  xsmall: "text-lg md:text-2xl lg:text-4xl pb-2",
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige skrifttyper.
 const fontClasses = {
-"display": "font-display",
+  display: "font-display",
 };
 
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskellige skrifttyper.
 const colorClasses = {
-"brand": "text-brand",
-"ink": "text-ink",
-"paper": "text-paper",
+  brand: "text-brand",
+  ink: "text-ink",
+  paper: "text-paper",
 };
 ---
+
 <Htmlheading class:list={[stylingclasses, sizeClasses[size], fontClasses[font], colorClasses[color]]}><slot /></Htmlheading>
