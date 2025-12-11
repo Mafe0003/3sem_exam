@@ -1,23 +1,24 @@
 ---
 // Henter parametrene fra Astro.props
-const { variant= "primary", size = "large" } = Astro.props; 
- 
+const { variant = "primary", size = "large" } = Astro.props;
+
 //Definer den styling (Tailwind classes, der gør sig gældende for alle knapper)
-const buttonStyling = "border-2 px-4 py-2.5 md:border-4 md:px-7 md:py-5"; 
- 
-//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
+const buttonStyling = "uppercase border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3";
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter
 const variantClasses = {
-"primary": "rounded-full border-brand text-brand hover:bg-brand hover:text-ink transition-all duration-600",
-"secondary": "rounded-full border-bold text-bold hover:bg-bold hover:text-ink transition-all duration-600",
-"tertiary": "rounded-full border-ink text-ink hover:bg-ink hover:text-paper transition-all duration-600",
-"white": "rounded-full border-paper text-paper hover:bg-paper hover:text-bold-700 transition-all duration-600",
+  primary: "rounded-full border-brand text-brand hover:bg-brand hover:text-ink transition-all duration-600",
+  secondary: "rounded-full border-bold text-bold hover:bg-bold hover:text-ink transition-all duration-600",
+  tertiary: "rounded-full border-ink text-ink hover:bg-ink hover:text-bold-300 transition-all duration-600",
+  white: "rounded-full border-paper text-paper hover:bg-paper hover:text-bold-700 transition-all duration-600",
 };
- 
+
 //Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
 const sizeClasses = {
-"large": "text-xl",
-"small": "text-base",
+  large: "text-base md:text-xl",
+  //   small: "text-base",
 };
 ---
+
 <!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
 <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
