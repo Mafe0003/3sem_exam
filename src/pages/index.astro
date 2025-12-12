@@ -3,13 +3,23 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import hero from "../assets/images/hero.webp";
+import scrollimg1 from "../assets/images/scrollimg1.webp";
+import scrollimg2 from "../assets/images/scrollimg2.webp";
+import scrollimg3 from "../assets/images/scrollimg3.webp";
+import scrollimg4 from "../assets/images/scrollimg4.webp";
+import scrollimg5 from "../assets/images/scrollimg5.webp";
 import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
 import linkedin from "../assets/images/linkedin.svg";
+import hjerte from "../assets/images/Hjerteillustration.webp";
+import hånd from "../assets/images/Illustration af en hånd.webp";
+import håndtryk from "../assets/images/Illustration af et håndtryk.webp";
+import megafonillustration from "../assets/images/Illustration af en megafon.webp";
 import megafon from "../assets/images/megafon.webp";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
+import BlogList from "../components/BlogList.astro";
 ---
 
 <MainLayout title="Homepage" class="">
@@ -55,7 +65,7 @@ import Button from "../components/Button.astro";
         <Button variant="tertiary">Støt</Button>
         <div class="flex items-center mt-4 gap-5">
           <Text teksttype="brødtekst">...eller</Text>
-          <Link href="#" target="_self" variant="secondary">læs mere</Link>
+          <Link href="stot_os" target="_self" variant="secondary">læs mere</Link>
         </div>
       </div>
       <!-- støt os form SLUT -->
@@ -79,5 +89,95 @@ import Button from "../components/Button.astro";
         </div>
       </div>
     </section>
+
+    <!-- section: Cards med grafik -->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop">
+      <div class="card w-full col-start-1 col-span-6 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-3">
+        <figure>
+          <Image class="h-30 w-auto" src={hjerte} alt="Illustration af et hjerte" />
+        </figure>
+        <div class="card-body px-0">
+          <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Bliv medlem</Heading>
+          <Text teksttype="brødtekst" color="brand">Vil du være med til at styrke ligestillingen i Danmark? Vi er en medlemsbaseret NGO, der kæmper for at fremme ligestilling og ligeværd. Som medlem er du med til at støtte vores arbejde og kan få indflydelse.</Text>
+          <div class="card-actions">
+            <Link href="bliv_medlem" target="_self" variant="primary">Læs mere</Link>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-full mt-10 col-start-1 col-span-6 md:mt-0 md:col-start-7 md:col-span-6 lg:col-start-4 lg:col-span-3">
+        <figure>
+          <Image class="h-30 w-auto" src={hånd} alt="Illustration af en hånd" />
+        </figure>
+        <div class="card-body px-0">
+          <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Indsatsområder</Heading>
+          <Text teksttype="brødtekst" color="brand">Vi arbejder strategisk med fire indsatsområder for at fremme ligestilling: bekæmpelse af vold mod kvinder, usynlige kvinder, ligeløn og repræsentation samt unge og ligestilling.</Text>
+          <div class="card-actions">
+            <Link href="#" target="_self" variant="primary">Læs mere</Link>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-full mt-10 col-start-1 col-span-6 lg:mt-0 lg:col-start-7 lg:col-span-3">
+        <figure>
+          <Image class="h-30 w-auto" src={håndtryk} alt="Illustration af et håndtryk" />
+        </figure>
+        <div class="card-body px-0">
+          <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Samarbejder</Heading>
+          <Text teksttype="brødtekst" color="brand">Vi indgår i netværk, samarbejder og alliancer med aktører for at fremme ligestilling. Vi mødes regelmæssigt med samarbejdspartnere, politikere og andre interessenter og deltager som oplægsholdere, i paneldebatter og ved konferencer.</Text>
+          <div class="card-actions">
+            <Link href="#" target="_self" variant="primary">Læs mere</Link>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-10 col-start-1 col-span-6 md:col-start-7 md:col-span-6 lg:mt-0 lg:col-start-10 lg:col-span-3">
+        <figure>
+          <Image class="h-30 w-auto" src={megafonillustration} alt="Illustration af en megafon" />
+        </figure>
+        <div class="card-body px-0">
+          <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Kalder alle unge</Heading>
+          <Text teksttype="brødtekst" color="brand">KALDER ALLE UNGE er Dansk Kvindesamfunds ungeprojekt, der giver unge en stemme i ligestillingsdebatten. Er du 16-30 år, kan du engagere dig i KALDER ALLE UNGE, og være med i kampen for et ligestillet samfund.</Text>
+          <div class="card-actions">
+            <Link href="#" target="_self" variant="primary">Læs mere</Link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: horizontal scroll -->
+    <div class="overflow-clip">
+      <section id="horisontalscrollsection" class="h-[500vw]">
+        <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[20vh]">
+          <li class="pl-5 md:pl-12 flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg1} class="pb-5 md:pb-0 w-2/3" alt="Unges deltagelse i civilsamfundet - plakat" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Unges deltagelse i civilsamfundet - En guide til vellykket ungeinddragelse</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund har med støtte fra Dansk Folkeoplysnings Samråd udarbejdet en pjece med anbefalinger til, hvordan man skaber de bedste rammer for unges deltagelse i civilsamfundet.</Text><Link href="#" target="_self" variant="primary">Læs pjecen</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg2} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="Billede af en gruppe unge" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">KALDER ALLE UNGE</Heading><Text teksttype="brødtekst" color="brand">Vores ambassadørnetværk er for alle unge, der gerne vil blive bedre til at tale om feminisme og ligestilling. Bliv en del af netværket i København eller Aarhus.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg3} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="To kvinder fra dansk kvindesamfund i 1871" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Fra 1871 til i dag: En historie om ligestilling og rettigheder.</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund blev grundlagt i 1871 som en pioner i kampen for kvinders rettigheder i Danmark. I over 150 år har vi været med til at forme samfundet.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg4} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="Feminisme plakat" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Ligestilling i fokus: Vores holdninger og politiske prioriteringer</Heading><Text teksttype="brødtekst" color="brand">I Dansk Kvindesamfund arbejder vi med mange ligestillingspolitiske emner. Her kan du læse om vores holdninger.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg5} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="3 kvinder" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Bliv en del af Kvindepanelet</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund og Gynækologisk Obstetrisk Afdeling på Odense Universitetshospital adresserer afgørende emner inden for forskning i kvinders sundhed og sygdomme samt ligestilling.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- section: Blog -->
+    <section class="mx-5 md:mx-12 m-sectiontop">
+      <div class="flex justify-between items-center mb-4">
+        <Heading htmlheading="h3" size="medium">Blog og indblik</Heading>
+        <Button>Læs alle</Button>
+      </div>
+      <BlogList />
+    </section>
   </main>
 </MainLayout>
+
+<script>
+  /* Import af Motion One bibliotek */
+  import { animate, stagger, inView, scroll } from "motion";
+
+  /* Horisontal scroll sektion JS */
+  scroll(
+    animate("#horisontalliste", {
+      transform: ["none", "translateX(-500vw)"],
+    }),
+    { target: document.querySelector("#horisontalscrollsection") }
+  );
+</script>
