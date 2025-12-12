@@ -1,0 +1,117 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import omos_img from "../assets/images/omos_img.webp";
+import omos1 from "../assets/images/omos1.webp";
+import omos2 from "../assets/images/omos2.webp";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout title="Om os" class="">
+  <main class="bg-spring">
+    
+<!-- section "Vores historie" start-->
+<section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+
+    <!-- tekst til venstre start -->
+    <div class="col-start-1 col-span-6 md:col-span-5"> 
+     <Heading htmlheading="h1" size="large" color="ink">Vores historie</Heading>
+     <Heading htmlheading="h2" size="xsmall" color="ink">Dansk Kvindesamfund har spillet en vigtig rolle i kvindepolitikken i Danmark ved at samle feministiske forkæmpere, igangsætte initiativer og være en markant stemme i ligestillingsdebatten.</Heading>
+    </div>
+    <!-- tekst til venstre slut -->
+
+<!-- billedet + tekst oveni -->
+<div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative">
+
+    <!-- Selve billedet -->
+    <Image 
+      class="w-full"
+      src={omos_img}
+      alt="billede af de tre kvinder i heroen på om os siden"
+    />
+
+    <!-- Blå streg + tekst ovenpå billedet -->
+        <!-- Tekst -->
+        <div class="absolute bottom-4 -right-4 md:bottom-20 lg:bottom-4 bg-[url(/billedetekst.svg)]"> 
+        <Text teksttype="konsultativ" color="paper">Suzanne Brøgger og Tine Bryld, 1984</Text>
+        </div>
+    
+</div>
+</section>
+<!-- section "Vores historie" slut-->
+
+<!-- section "Danmarks første..." start-->
+<section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop">
+<!-- første kolonne -->
+<div class="col-start-1 col-span-6 md:col-span-5">
+<Heading htmlheading="h3" size="medium" color="ink">Danmarks første kvinderettigheds-organisation stiftes</Heading>
+
+<!-- billede + tekst oveni start-->
+<div class="relative"> 
+ <Image 
+      class="w-full"
+      src={omos1}
+      alt="Frederik og Matilde Bajer"
+    />
+
+<div class="absolute top-4 -right-4 bg-[url(/billedetekst.svg)]"> 
+<Text teksttype="konsultativ" color="paper">Fredrik og Matilde Bajer</Text>
+</div>
+</div>
+<!-- billede + tekst oveni slut-->
+
+<!-- 1. paragraph -->
+ <div class="mt-15"> 
+<Text teksttype="manchet" >Organisationen, der senere kom til at hedde Dansk Kvindesamfund, blev  stiftet i 1871 i en lejlighed i Blågårdsgade 15, 1. sal. af Frederik og  Matilde Bajer. Til at starte med var det som skandinavisk afdeling af  den schweizisk initierede 'Association Internationale des Femmes' - en international forening for kvinders rettigheder, der ønskede  lokale komiteer i Europa. Senere samme år brød man forbindelsen med  moderorganisationen og dannede den selvstændige organisation, Dansk  Kvindesamfund.</Text>
+</div>
+
+<!-- 2. paragraph -->
+ <div class="mt-15"> 
+<Text teksttype="brødtekst" >Ægteparret og barndomsvennerne Matilde og Frederik Bajer delte  feministiske værdier og tanker om kvindens frigørelse. Matilde, den  egentlige stifter, var stor kritiker af kvindens daværende stilling i  samfundet, og blev organisationens første forstanderske (datidens  betegnelse for forkvinde). Frederik, der fungerede som sekretær og  rådgiver, fik en vigtig rolle da han kom i Folketinget og derigennem  skabte en indgang til det parlamentarisk niveau.</Text>
+</div>
+
+</div>
+<!-- første kolonne slut -->
+
+<!-- anden kolonne -->
+<div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6"> 
+
+<!-- 1. paragraph -->
+ <div class="mt-15 md:mt-0"> 
+<Text teksttype="brødtekst" >Udover dem var lærerinden Caroline Testman, Tagea Brandt og Elisabeth  Ouchterlony også en del af organisationens grundlæggelse. Blandt de  tidligste medlemmer var forfatterinden Mathilde Fibiger, som lægger navn til Dansk Kvindesamfunds hæderspris, Mathildeprisen, der uddeles til  personer eller foreninger, der gør en særlig indsats for ligestilling.</Text>
+</div>
+
+<!-- 2. paragraph -->
+ <div class="mt-15"> 
+<Text teksttype="brødtekst" >Da Dansk Kvindesamfund blev stiftet var mulighederne for aktivisme  blandt kvinder meget begrænsede. Derfor bestod bestyrelsen og støtterne  primært af lærerinder og gifte fruer, der havde rum, tid og overskud til at engagere sig i velgørenhed og kvindesag. Disse kvinder blev hånende  kaldt hattedamer og beskyldt for at være borgerkvinder, der talte til og om borgerkvinder. Ved en vedtægtsændring blev det fastslået, at  foreningen ikke arbejdede med velgørenhed, men for at ændre selve  kvindekønnets stilling i samfundet bl.a. ved at give adgang til at  forsørge sig selv.  </Text>
+</div>
+
+<div class="mt-15"> 
+<Link href="https://danmarkshistorien.lex.dk/Dansk_Kvindesamfund_1871-" target="_blank" variant="secondary">læs mere om historien her</Link>
+</div>
+
+<!-- billede + tekst oveni start-->
+<div class="relative mt-5 md:mt-120"> 
+ <Image 
+      class="w-full"
+      src={omos2}
+      alt="grundlovsoptog fredag den 5. juli"
+    />
+
+<div class="absolute bottom-4 -right-4 bg-[url(/billedetekst.svg)]"> 
+<Text teksttype="konsultativ" color="paper">Grundlovsoptog fredag 5. Juli</Text>
+</div>
+</div>
+<!-- billede + tekst oveni slut-->
+
+</div>
+
+
+</section>
+<!-- section "Danmarks første..." slut-->
+
+  </main>
+</MainLayout>
