@@ -1,0 +1,157 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import hero from "../assets/images/stot_hero.webp";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout title="Stot" class="">
+  <main class="bg-brand">
+    <!-- Hero tekst -->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+      <div class="col-start-1 col-span-4 mt-20">
+        <Heading htmlheading="h2" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
+      </div>
+      <div class="col-span-full">
+        <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
+      </div>
+
+      <div class="bg-ink grid col-span-full pt-5 pb-5">
+        <div class="col-start-1 col-span-4">
+          <Button variant="primary">Bliv medlem</Button>
+        </div>
+        <div class="col-start-6">
+          <Button variant="white">Doner</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tekst sektion top -->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop: 224px md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop: 224px">
+      <div class="col-start-1 col-span-6 mt-20">
+        <Heading htmlheading="h3" size="large" color="ink">Bliv Medlem</Heading>
+        <Text teksttype="manchet" color="ink">Som medlem får du ikke kun mulighed for at bidrage økonomisk, men også for at være en del af et aktivt fællesskab, hvor din stemme bliver hørt.</Text>
+      </div>
+    </section>
+
+    <!-- Medlem Cards !Kodedele taget fra Daisiy Ui! -->
+
+    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop: 224px md:grid-cols-12 md:gap-5 md:mx-12">
+      <div class="col-start-1 col-span-6">
+        <div class="card bg-ink w-full rounded-3xl">
+          <div class="card-body">
+            <Heading htmlheading="h4" size="medium" color="paper">Ordinært medlemskab</Heading>
+
+            <ul class="list-disc col-start-1 col-span-1 md:col-span-12 pl-3">
+              <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Løbende nyhedsbreve med opdateringer om vores arbejde og indsigt i den aktuelle ligestillingsdebat.</Text></li>
+              <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Mulighed for at engagere dig aktivt i kampagner, netværk og frivillige aktiviteter, der skaber reel forandring.</Text></li>
+              <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Masser af muligheder for at gøre en forskel som frivillig (vi kan ALTID bruge seje medlemmer, der gerne vil hjælpe!).</Text></li>
+              <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Og meget mere...</Text></li>
+            </ul>
+            <div class="bg-blue-500 grid col-span-full pt-5 pb-5 rounded-3xl">
+              <div class="col-span-5 pl-5">
+                <Text teksttype="manchet" color="paper">Månedligt</Text>
+                <Heading htmlheading="h5" size="large" color="paper">50,-</Heading>
+              </div>
+              <div class="col-start-6 pt-4">
+                <Button variant="tertiary">Bliv Medlem</Button>
+              </div>
+            </div>
+            <div class="bg-blue-500 grid col-span-full pt-5 pb-5 rounded-3xl mb-5">
+              <div class="col-span-5 pl-5">
+                <Text teksttype="manchet" color="paper">Halvårligt</Text>
+                <Heading htmlheading="h5" size="large" color="paper">250,-</Heading>
+              </div>
+              <div class="col-start-6 pt-4">
+                <Button variant="tertiary">Bliv Medlem</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medlem Cards 2 !Kodedele taget fra Daisiy Ui! -->
+
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop: 224px">
+      <div class="col-start-1 col-span-6">
+        <div class="card bg-ink w-full rounded-3xl">
+          <div class="card-body">
+            <Heading htmlheading="h4" size="medium" color="paper">Nedsat medlemskab</Heading>
+            <Text teksttype="manchet" color="paper">For dig der er ledig, pensionist eller studerende:</Text>
+
+            <ul class="list-disc col-start-1 col-span-5 md:col-span-12 pl-3">
+              <li class="pb-5">
+                <Text teksttype="brødtekst" color="paper">Med et nedsat medlemsskab får du alle de samme goder, som ved et ordinært medlemsskab.</Text>
+              </li>
+            </ul>
+
+            <div class="bg-blue-500 grid col-span-full pt-5 pb-5 rounded-3xl">
+              <div class="col-span-5 pl-5">
+                <Text teksttype="manchet" color="paper">Månedligt</Text>
+                <Heading htmlheading="h5" size="large" color="paper">50,-</Heading>
+              </div>
+              <div class="col-start-6 pt-4">
+                <Button variant="tertiary">Bliv Medlem</Button>
+              </div>
+            </div>
+            <div class="bg-blue-500 grid col-span-full pt-5 pb-5 rounded-3xl mb-5">
+              <div class="col-span-5 pl-5">
+                <Text teksttype="manchet" color="paper">Halvårligt</Text>
+                <Heading htmlheading="h5" size="large" color="paper">250,-</Heading>
+              </div>
+              <div class="col-start-6 pt-4">
+                <Button variant="tertiary">Bliv Medlem</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ !Kodedele taget fra Daisiy Ui! -->
+
+    <section class="grid grid-cols-6 gap-2.5 mx-5 bg-bold md:grid-cols-12 md:gap-5 md:mx-12">
+      <Heading htmlheading="h3" size="large" color="paper">FAQ</Heading>
+      <div class="col-start-1 col-span-full">
+        <div tabindex="0" class="collapse collapse-plus border-t border-b border-base-300">
+          <div class="collapse-title">
+            <Heading class="collapse-title" htmlheading="h5" size="xsmall" color="paper">Som medlem får du</Heading>
+          </div>
+
+          <div class="collapse-content text-sm">
+            <Text teksttype="manchet" color="paper"
+              >Adgang og viden om arrangementer, workshops og foredrag, hvor du kan møde eksperter og aktivister, der arbejder for ligestilling. <br /><br />Løbende nyhedsbreve med opdateringer om vores arbejde og indsigt i den aktuelle ligestillingsdebat.<br /><br /> Mulighed for at engagere dig aktivt i kampagner, netværk og frivillige aktiviteter, der skaber reel forandring. <br /><br />Stemmeret til generalforsamlinger, så du kan være med til at præge organisationens retning og sikre, at vi sammen arbejder for en fremtid med lige muligheder for alle.<br /><br /> En stærk følelse af at være en del af noget større – et fællesskab, der kæmper for lige rettigheder og lige muligheder for alle.<br /><br /> Masser af muligheder for at gøre en forskel som frivillig (vi kan ALTID bruge seje medlemmer,
+              der gerne vil hjælpe!). <br /><br />Vores medlemsblad, som dækker vigtige og aktuelle ligestillingsemner – med perspektiver, du ikke finder andre steder. <br /><br />Rabatter på oplevelser, netværkstræf og andre events, hvor du kan møde andre engagerede feminister og blive inspireret. <br /><br />Invitationer til særarrangementer.<br /> Vi arbejder løbende på at sikre flere fordele til vores medlemmer, så dit medlemskab ikke bare gør en forskel - men også giver igen.</Text
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-start-1 col-span-full">
+        <div tabindex="0" class="collapse collapse-plus border-t border-b border-base-300">
+          <div class="collapse-title col-start-1 col-span-3">
+            <Heading class="collapse-title" htmlheading="h5" size="xsmall" color="paper">Som medlem er du med til at støtte vores arbejde med</Heading>
+          </div>
+
+          <div class="collapse-content text-sm">
+            <Text teksttype="manchet" color="paper">Bekæmpelse af vold mod kvinder, kvindedrab, voldtægt og negativ social kontrol.<br /> Oplysning om sexisme, #MeToo og digitale krænkelser.<br /> Styrkelse af kvinders seksuelle og reproduktive sundhed og rettigheder.<br /><br /> Indsatsen for ligeløn og lige repræsentation.<br /> Synliggørelse af kvinders ofte oversete sygdomme og livsvilkår.<br /> <br /> Og meget mere! </Text>
+          </div>
+        </div>
+      </div>
+      <div class="col-start-1 col-span-full">
+        <div tabindex="0" class="collapse collapse-plus border-t border-b border-base-300">
+          <div class="collapse-title col-start-1 col-span-3">
+            <Heading class="collapse-title" htmlheading="h5" size="xsmall" color="paper">Din støtte er vigtig</Heading>
+          </div>
+
+          <div class="collapse-content text-sm">
+            <Text teksttype="manchet" color="paper">Da vi er en uafhængig organisation, som ikke modtager statsstøtte, er vores medlemmer ekstra vigtige for os.<br /><br /> Dansk Kvindesamfund står fast på, at ligestilling ikke er en kamp mellem kønnene – det handler om at skabe et samfund med muligheder, ligeværd og lige rettigheder for alle.<br /><br /> Sammen skaber vi forandring, og din støtte gør det muligt for os at fortsætte arbejdet. </Text>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</MainLayout>
