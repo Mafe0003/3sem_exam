@@ -12,25 +12,19 @@ import Button from "../components/Button.astro";
   <main class="bg-brand">
     <!-- Hero tekst -->
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
-      <div class="col-start-1 col-span-4 mt-20">
-        <Heading htmlheading="h2" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
+      <div class="col-start-1 col-span-4 mt-20 md:col-span-7">
+        <Heading htmlheading="h2" size="large" color="ink">VÆR EN DEL AF FORANDRINGEN</Heading>
       </div>
-      <div class="col-span-full">
+      <div class="col-start-1 col-span-4 -mt-5 md:col-span-7">
+        <Text teksttype="manchet" color="ink">Som medlem bliver du en del af et nært fællesskab, der kæmper for ligestilling.</Text>
+      </div>
+      <div class="col-span-full md:col-start-5">
         <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
-      </div>
-
-      <div class="bg-ink grid col-span-full pt-5 pb-5">
-        <div class="col-start-1 col-span-4">
-          <Button variant="primary">Bliv medlem</Button>
-        </div>
-        <div class="col-start-6">
-          <Button variant="white">Doner</Button>
-        </div>
       </div>
     </section>
 
     <!-- Tekst sektion top -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop: 224px md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop: 224px">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop: 224px md:grid-cols-12 md:gap-5 md:mx-12">
       <div class="col-start-1 col-span-6 mt-20">
         <Heading htmlheading="h3" size="large" color="ink">Bliv Medlem</Heading>
         <Text teksttype="manchet" color="ink">Som medlem får du ikke kun mulighed for at bidrage økonomisk, men også for at være en del af et aktivt fællesskab, hvor din stemme bliver hørt.</Text>
@@ -39,13 +33,13 @@ import Button from "../components/Button.astro";
 
     <!-- Medlem Cards !Kodedele taget fra Daisiy Ui! -->
 
-    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop: 224px md:grid-cols-12 md:gap-5 md:mx-12">
-      <div class="col-start-1 col-span-6">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 mt-10 md:mt-20 md:grid-cols-12 md:gap-5 md:mx-12">
+      <div class="col-start-1 col-span-6 md:col-span-5 md:col-start-2">
         <div class="card bg-ink w-full rounded-3xl">
           <div class="card-body">
             <Heading htmlheading="h4" size="medium" color="paper">Ordinært medlemskab</Heading>
 
-            <ul class="list-disc col-start-1 col-span-1 md:col-span-12 pl-3">
+            <ul class="col-start-1 col-span-5 md:col-span-12 pl-3 max-w-75">
               <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Løbende nyhedsbreve med opdateringer om vores arbejde og indsigt i den aktuelle ligestillingsdebat.</Text></li>
               <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Mulighed for at engagere dig aktivt i kampagner, netværk og frivillige aktiviteter, der skaber reel forandring.</Text></li>
               <li class="pb-5"><Text teksttype="brødtekst" color="paper">• Masser af muligheder for at gøre en forskel som frivillig (vi kan ALTID bruge seje medlemmer, der gerne vil hjælpe!).</Text></li>
@@ -72,24 +66,19 @@ import Button from "../components/Button.astro";
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Medlem Cards 2 !Kodedele taget fra Daisiy Ui! -->
-
-    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop: 224px">
-      <div class="col-start-1 col-span-6">
+      <div class="col-start-1 col-span-6 md:col-span-5 md:col-start-7">
         <div class="card bg-ink w-full rounded-3xl">
           <div class="card-body">
             <Heading htmlheading="h4" size="medium" color="paper">Nedsat medlemskab</Heading>
             <Text teksttype="manchet" color="paper">For dig der er ledig, pensionist eller studerende:</Text>
 
-            <ul class="list-disc col-start-1 col-span-5 md:col-span-12 pl-3">
+            <ul class="col-start-1 col-span-5 md:col-span-12 pl-3 max-w-75 md:mt-12">
               <li class="pb-5">
-                <Text teksttype="brødtekst" color="paper">Med et nedsat medlemsskab får du alle de samme goder, som ved et ordinært medlemsskab.</Text>
+                <Text teksttype="brødtekst" color="paper">• Med et nedsat medlemsskab får du alle de samme goder, som ved et ordinært medlemsskab.</Text>
               </li>
             </ul>
 
-            <div class="bg-blue-500 grid col-span-full pt-5 pb-5 rounded-3xl">
+            <div class="bg-blue-500 grid col-span-full pt-5 pb-5 rounded-3xl md:mt-53">
               <div class="col-span-5 pl-5">
                 <Text teksttype="manchet" color="paper">Månedligt</Text>
                 <Heading htmlheading="h5" size="large" color="paper">50,-</Heading>
@@ -112,9 +101,11 @@ import Button from "../components/Button.astro";
       </div>
     </section>
 
+    <!-- Medlem Cards 2 !Kodedele taget fra Daisiy Ui! -->
+
     <!-- FAQ !Kodedele taget fra Daisiy Ui! -->
 
-    <section class="grid grid-cols-6 gap-2.5 mx-5 bg-bold md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 bg-bold md:grid-cols-12 md:gap-5 md:mx-12 mt-10">
       <Heading htmlheading="h3" size="large" color="paper">FAQ</Heading>
       <div class="col-start-1 col-span-full">
         <div tabindex="0" class="collapse collapse-plus border-t border-b border-base-300">
