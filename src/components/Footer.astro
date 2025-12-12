@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import footer_lady from "../assets/images/footer_lady.webp";
 import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
 import linkedin from "../assets/images/linkedin.svg";
@@ -75,10 +76,45 @@ import Button from "../components/Button.astro";
     <Heading htmlheading="h5" size="xsmall" stylingclasses="font-semibold uppercase">nyhedsbrev</Heading>
     <Text color="brand", stylingclasses="mb-2">Nyhedsbrevet er til dig, der gerne vil holde sig opdateret om Dansk kvindesamfunds events og nyheder.</Text>
     <Text color="brand", stylingclasses="mb-2">Du kan til enhver tid framelde dig igen!</Text>
+
+    <!-- formular start -->
+        <form class="flex flex-col mt-15">
+
+            <!-- Fulde navn -->
+            <label class="text-brand text-base md:text-xl">
+                Fulde navn:
+                <input 
+                    type="text" 
+                    placeholder="Ida Hansen"
+                    class="my-4 w-full rounded-full border-2 md:border-4 border-brand bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none"
+                />
+            </label>
+        
+            <!-- Email -->
+            <label class="text-brand text-base md:text-xl">
+                E-mail:
+                <input 
+                    type="email" 
+                    placeholder="idahansen@eksempel.dk"
+                    class="my-4 w-full rounded-full border-2 md:border-4 border-brand bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none"
+                />
+            </label>
+
+            <!-- Knap -->
+             <div class="self-end my-4 md:mb-8"> 
+            <Button variant="primary" size="large">Tilmeld dig!</Button>
+            </div>
+
+        </form>
+        <!-- formular slut -->
+
     </div>
     <!-- nyhedsbrev slut -->
 
-
+    <!-- footer billede -->
+     <div class="col-start-1 col-span-6 md:col-start-6">
+    <Image class="w-full" src={footer_lady} alt="billede af en kvinden der pejer på nyhedsbrev" />
+     </div>
 
 </section>
 <!-- 2. sektion footeren slut -->
