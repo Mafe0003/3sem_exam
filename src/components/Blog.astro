@@ -1,0 +1,18 @@
+---
+const { cardTitle, src, dato } = Astro.props;
+import Text from "../components/Text.astro";
+import Heading from "../components/Heading.astro";
+import { Image } from "astro:assets";
+---
+
+<section>
+  <div class="card w-full rounded-none">
+    <figure>
+      <Image src={src} alt="Blog image" />
+    </figure>
+    <div class="card-body px-0">
+      <Text teksttype="konsultativ" color="brand">{dato}</Text>
+      <Heading class="card-title" htmlheading="h5" size="xsmall">{cardTitle}</Heading>
+    </div>
+  </div>
+</section>
