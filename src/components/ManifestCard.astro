@@ -1,0 +1,10 @@
+---
+const { number, text } = Astro.props;
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+---
+
+<div class="bg-bold-700 aspect-square rounded-3xl p-5 md:p-8">
+  <Heading htmlheading="h3" size="medium" color="paper">{number}</Heading>
+  <Text teksttype="brødtekst" color="paper">{text}</Text>
+</div>
