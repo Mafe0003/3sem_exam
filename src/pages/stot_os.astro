@@ -14,35 +14,38 @@ import Button from "../components/Button.astro";
   <main class="bg-brand">
     <!-- Hero tekst -->
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
-      <div class="col-start-1 col-span-4 mt-20 md:col-span-8">
+      <div class="col-start-1 col-span-4 md:col-span-6">
         <Heading htmlheading="h2" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
       </div>
-      <div class="col-start-1 col-span-4 -mt-5 md:col-span-6">
+      <div class="col-start-1 col-span-4 md:col-span-8 -mt-5 md:-mt-5">
         <Text teksttype="manchet" color="ink">Alle kan give et bidrag til vores arbejdet for ligestilling.</Text>
       </div>
-      <div class="col-span-full md:col-start-5">
+      <div class="col-span-full md:col-start-7 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out">
         <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
       </div>
     </section>
 
     <!-- Tekst sektion -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop-M md:m-sectiontop-D md:grid-cols-12 md:gap-5 md:mx-12">
       <div class="col-start-1 col-span-6 md:col-span-5">
         <Heading htmlheading="h3" size="large" color="ink">Donationer</Heading>
-        <div class="mb-20">
-          <Text teksttype="brødtekst" color="ink">Her på siden kan du give et bidrag til arbejdet for ligestilling. <br /><br /> Det er også her du kan donere til vores §8A-indsamling, hvilket betyder at vi kan søge støtte til foreningens aktiviteter (Statens Udlodningspulje).<br /><br /> Dit bidrag er med til at sikre, at vi kan fortsætte vores arbejde med at sætte ligestilling på dagsordenen.<br /><br /> Du kan enten vælge at donere de 200kr en gang eller at opsætte en fast månedlig donation. OBS; Donationer er ikke det samme som medlemskab. <br /><br />Ønsker du at blive medlem og få adgang til medlemsfordele, så skal det gøres her; Bliv medlem </Text>
+        <div class="mt-5 mb-10 md:mt-10 md:mb-20">
+          <Text teksttype="brødtekst" color="ink">Her på siden kan du give et bidrag til arbejdet for ligestilling. <br /><br /> Det er også her du kan donere til vores §8A-indsamling, hvilket betyder at vi kan søge støtte til foreningens aktiviteter (Statens Udlodningspulje).<br /> Dit bidrag er med til at sikre, at vi kan fortsætte vores arbejde med at sætte ligestilling på dagsordenen.<br /> Du kan enten vælge at donere de 200kr en gang eller at opsætte en fast månedlig donation. OBS; Donationer er ikke det samme som medlemskab. <br />Ønsker du at blive medlem og få adgang til medlemsfordele, så skal det gøres her; Bliv medlem </Text>
         </div>
+
         <Heading htmlheading="h5" size="xsmall" color="ink">Hvad går dine penge til ved donation?</Heading>
-
-        <ul class="list-disc ml-5 text-ink col-span-4">
-          <li class="pb-5"><Text teksttype="brødtekst" color="ink">Når du donerer til Dansk Kvindesamfund, er du med til at støtte et vigtigt arbejde for ligestilling og for at hjælpe voldsramte kvinder og børn i Danmark.</Text></li>
-          <li class="pb-5"><Text teksttype="brødtekst" color="ink">Din donation går blandt andet til rådgivning, krisecenterophold, forebyggende indsatser og konkrete projekter, der gør det muligt for kvinder og børn at komme fri af vold og få en tryg ny start.</Text></li>
-          <li class="pb-5"><Text teksttype="brødtekst" color="ink">Samtidig bidrager du til organisationens oplysnings- og rettighedsarbejde, som sætter fokus på køn, vold og ligestilling i den offentlige debat.</Text></li>
-        </ul>
-
-        <div class="mt-10 mb-10">
+        <div class="mt-5 mb-10 md:mt-10">
+          <ul class="list-disc ml-5 text-ink col-span-4 mt-5 md:mt-10 md:mb-20">
+            <li class="pb-5"><Text teksttype="brødtekst" color="ink">Når du donerer til Dansk Kvindesamfund, er du med til at støtte et vigtigt arbejde for ligestilling og for at hjælpe voldsramte kvinder og børn i Danmark.</Text></li>
+            <li class="pb-5"><Text teksttype="brødtekst" color="ink">Din donation går blandt andet til rådgivning, krisecenterophold, forebyggende indsatser og konkrete projekter, der gør det muligt for kvinder og børn at komme fri af vold og få en tryg ny start.</Text></li>
+            <li class="pb-5"><Text teksttype="brødtekst" color="ink">Samtidig bidrager du til organisationens oplysnings- og rettighedsarbejde, som sætter fokus på køn, vold og ligestilling i den offentlige debat.</Text></li>
+          </ul>
+        </div>
+        <div class="">
           <Heading htmlheading="h5" size="xsmall" color="ink">Arv og testamente</Heading>
-          <Text teksttype="brødtekst" color="ink">Det er muligt at støtte Dansk Kvindesamfunds arbejde for ligestilling ved at tilgodese os i dit testamente. Din arv kan bidrage til vores indsats for at skabe et mere lige og retfærdigt samfund. På Det Gode Testamente kan du læse mere om, hvordan du nemt kan udfærdige et testamente og sikre, at din støtte gør en forskel for kommende generationer.</Text>
+          <div class="mt-5 mb-10 md:mt-10">
+            <Text teksttype="brødtekst" color="ink">Det er muligt at støtte Dansk Kvindesamfunds arbejde for ligestilling ved at tilgodese os i dit testamente. Din arv kan bidrage til vores indsats for at skabe et mere lige og retfærdigt samfund. På Det Gode Testamente kan du læse mere om, hvordan du nemt kan udfærdige et testamente og sikre, at din støtte gør en forskel for kommende generationer.</Text>
+          </div>
         </div>
       </div>
 
@@ -86,10 +89,12 @@ import Button from "../components/Button.astro";
         </div>
         <div class="">
           <div class="">
-            <label class="flex items-center gap-3 cursor-pointer">
-              <input type="checkbox" checked="checked" class="checkbox" />
-              <div class="grid grid-cols-2 gap-3 items-center">
-                <Text teksttype="brødtekst" color="ink">Betalingskort</Text>
+            <label class="flex items-center justify-between gap-3 cursor-pointer">
+              <div class="flex items-center gap-3">
+                <input type="checkbox" checked="checked" class="checkbox" />
+                <div class="grid grid-cols-2 gap-3 items-center">
+                  <Text tekstype="brødtekst" color="ink">Betalingskort</Text>
+                </div>
               </div>
               <div class="grid grid-cols-2 gap-2">
                 <Image class="" src={dankort} alt="Dankort logo" />
@@ -97,12 +102,14 @@ import Button from "../components/Button.astro";
               </div>
             </label>
           </div>
-          <label class="flex items-center gap-3 cursor-pointer mt-5">
-            <input type="checkbox" checked="checked" class="checkbox" />
-            <div class="grid grid-cols-4 gap-2 items-center">
-              <Text teksttype="brødtekst" color="ink">Mobilepay</Text>
+          <label class="flex items-center justify-between gap-3 cursor-pointer mt-5">
+            <div class="flex items-center gap-3">
+              <input type="checkbox" checked="checked" class="checkbox" />
+              <div class="grid grid-cols-4 gap-2 items-center">
+                <Text tekstype="brødtekst" color="ink">Mobilepay</Text>
+              </div>
             </div>
-            <div class="grid grid-cols-2 gap-2">
+            <div class="grid grid-cols-1 gap-2">
               <Image class="" src={mobilepay} alt="mobilepay logo" />
             </div>
           </label>
@@ -154,17 +161,59 @@ import Button from "../components/Button.astro";
         <div class="flex justify-end">
           <Button variant="tertiary">STØT</Button>
         </div>
-        <div class="mt-10">
-          <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
-            <div class="collapse-title font-semibold">Læs vores betingelser her</div>
-            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+
+        <!--Begingelser -->
+        <section class="grid col-span-full gap-2.5 mx-5 bg-bold mt-10">
+          <div class="collapse collapse-plus bg-brand text-ink rounded-none border-t-2 border-b-2 border-ink">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Text teksttype="brødtekst" color="ink">Læs vores betingelser her</Text></div>
+            <div class="collapse-content w-full mt-5 -mb-2 md:mt-10">
+              <Text teksttype="konsultativ" color="ink">Tak for at støtte vores arbejde. Du er velkommen til at frabede dig, at vi af og til kontakter dig med nyt om Dansk Kvindesamfund. På Privatlivspolitik fortæller vi, hvordan vi passer på dine persondata, og hvordan du kan takke nej til henvendelser fra os.</Text>
+            </div>
           </div>
-        </div>
-        <div class="mt-5">
-          <Text teksttype="brødtekst" color="ink">Tak for at støtte vores arbejde. Du er velkommen til at frabede dig, at vi af og til kontakter dig med nyt om Dansk Kvindesamfund. På Privatlivspolitik fortæller vi, hvordan vi passer på dine persondata, og hvordan du kan takke nej til henvendelser fra os.</Text>
-        </div>
+        </section>
       </div>
     </section>
-    <!-- Arv og testamente -->
+
+    <!-- FAQ -->
+    <div class="bg-bold">
+      <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 m-sectiontop-M md:m-sectiontop-D">
+        <!-- overskrift start-->
+        <div class="col-start-1 col-span-6 pt-10">
+          <Heading htmlheading="h3" size="medium" color="paper">FAQ</Heading>
+        </div>
+
+        <!-- overskrift slut-->
+
+        <div class="col-start-1 col-span-6 md:col-span-12">
+          <!-- 1. -->
+          <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Hvor meget kan jeg donere?</Heading></div>
+            <div class="collapse-content md:max-w-1/2">
+              <Text teksttype="manchet" color="paper">Vi har et forslag som lyder på 200 kr som er minimums beløbet for en donation - ellers vælger du “andet” og vælger frit fra 200,- og op, hvor meget du vil donere.</Text>
+            </div>
+          </div>
+
+          <!-- 2. -->
+          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Hvilke betalingsmetoder kan jeg bruge?</Heading></div>
+            <div class="collapse-content md:max-w-1/2">
+              <Text teksttype="manchet" color="paper">Betaling kan ske ved brug af følgende betalingsmidler: MobilePay, VISA/Dankort og MasterCard.</Text>
+            </div>
+          </div>
+
+          <!-- 3. -->
+          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Er der fortrydelsesret på donationer?</Heading></div>
+            <div class="collapse-content md:max-w-1/2">
+              <Text teksttype="manchet" color="paper">Der er ikke fortrydelsesret på donationer eller på betaling for medlemskab. <br /><br />Hvis du ønsker at opsige medlemskab, skal du skrive til: sekretariat@danskkvindesamfund.dk </Text>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 </MainLayout>
