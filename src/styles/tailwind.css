@@ -35,7 +35,8 @@
   --font-display: "Inter", sans-serif;
 
   /*SPACING */
-  --spacing-sectiontop: 224px;
+  --spacing-sectiontop-M: 100px;
+  --spacing-sectiontop-D: 200px;
 
   /*Infinite scroll animation på banneren*/
   --animate-infinite-scroll: infinite-scroll 25s linear infinite;

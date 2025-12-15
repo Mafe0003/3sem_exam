@@ -20,7 +20,12 @@ import Text from "../components/Text.astro";
         <Heading htmlheading="h1" size="large" color="paper">Feministisk fremtidsmanifest</Heading>
         <Heading size="xsmall" color="paper">24 punkter for frihed, ligestilling og ligeværd samlet i ét manifest for de generationer, der kommer efter os. Det er vores drøm for fremtiden og det, vi som organisation arbejder hen imod.</Heading>
       </div>
-      <Image class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 md:mt-50" src={manifest} alt="To kvinder fra Dansk Kvindesamfund" />
+      <div class="relative col-start-1 col-span-6 md:col-start-6 md:col-span-8 md:mt-30 lg:mt-25">
+        <Image class="intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={manifest} alt="To kvinder fra Dansk Kvindesamfund" />
+        <div class="absolute bottom-25 right-5 lg:bottom-30 bg-[url(/billedetekst.svg)]">
+          <Text teksttype="konsultativ" color="paper">Gyrithe Lemche og Julie Arenholdt,<br /> medl. af Dansk Kvindesamfund</Text>
+        </div>
+      </div>
     </section>
 
     <!-- section med manifest kasser -->
@@ -31,7 +36,7 @@ import Text from "../components/Text.astro";
       <ManifestCard number="04" text="Retten til den fri abort er ukrænkelig. Der er adgang til fri og sikker abort i hele Danmark, i det danske Rigsfællesskab og i hele verden." />
       <ManifestCard number="05" text="Lige løn for lige arbejde og arbejde af samme værdi." />
       <ManifestCard number="06" text="Mennesker i prostitution har bedre vilkår. Dem, der sælger sex har et liv med rettigheder og adgang til støtte og hjælp – ikke mindst til rehabilitering, hvis de ønsker, at træde ud." />
-      <Image class="-mb-5 -mt-38.5" src={kvinderåb} alt="Kvinde råber i megafon" />
+      <Image class="-mb-5 -mt-38.5 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={kvinderåb} alt="Kvinde råber i megafon" />
       <ManifestCard number="07" text="Ingen frygter at blive gravid og føde børn. En god, tryg og sikker graviditet og fødsel er en rettighed, som alle har overalt i verden." />
       <ManifestCard number="08" text="Kvinder udskammes eller sygeliggøres ikke for at fravælge moderskab og børn, og der er reelt plads i samfundet og lovgivningen til andre familieformer end den traditionelle kernefamilie." />
       <ManifestCard number="09" text="Der er plads til frisind og seksuel og kropslig frigørelse. Slutshaming og udskamning af kvinders seksualitet og det patriarkalske ”luder/madonna-skisma”, hvor kvinders seksualitet enten er for meget eller for lidt, hører fortiden til." />
@@ -39,14 +44,14 @@ import Text from "../components/Text.astro";
       <ManifestCard number="11" text="Der er plads til kvinden i al sin mangfoldighed, diversitet og kropsform. Kvinder i alle aldre, størrelser, etniciteter og kønsudtryk indtager alle tænkelige rum, hvad enten det er medier, det offentlige rum eller embeder." />
       <ManifestCard number="12" text="Der findes ikke industrier som udnytter, udskammer og kapitaliserer på kvinder, kvinders kroppe, kvinders biologi og kvinders seksualitet." />
       <ManifestCard number="13" text="Titler og kompetencer er ikke kønnede, da de kan indtages af alle køn. Vi omtaler det ikke længere som “kvindelig statsminister”, “kvindelig bankdirektør”, “kvindeligt bestyrelsesmedlem”, “kvindelig iværksætter”, “kvindelig overlæge”, “kvindelig ingeniør”, “kvindelig professor”, “kvindelig biskop” eller “kvindelig borgmester." />
-      <Image class="-mt-55 md:-mb-5 md:-mt-35 scale-105" src={rødstrømpe} alt="Rød strømpe" />
+      <Image class="-mt-55 md:-mb-5 md:-mt-35 scale-105 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={rødstrømpe} alt="Rød strømpe" />
       <ManifestCard number="14" text="Omsorgsarbejde ses ikke kun som noget feminint, hvor det er kvinderne, der hænger på og påduttes både det ulønnede omsorgsarbejde i hjemmet, i familien og via de såkaldte “kvindedominerede omsorgsfag”. Omsorg er ikke en kønnet egenskab eller faglighed." />
       <ManifestCard number="15" text="Vores demokrati afspejler befolkningen, hvor der er en lige repræsentation af alle køn, inklusiv en repræsentation af forskellige minoriteter, hvad enten det gælder køn, etnicitet, klasse, seksuel orientering, handicap eller religiøs overbevisning." />
       <ManifestCard number="16" text="Magt, penge, jord og alle naturlige ressourcer er fordelt ligeligt mellem kønnene." />
       <ManifestCard number="17" text="Ens køn er ikke definerende for ens chancer, rettigheder og privilegier." />
       <ManifestCard number="18" text="Som samfund har vi indset, at vi ikke har opnået ligestilling. Vi har indset, at vi aldrig bliver færdige med ligestillingen, og anerkender, at det er en proces, vi skal stræbe efter hele tiden at blive endnu bedre til. Vi har forstået, at ligestilling ikke er en kamp mellem kønnene, hvor der er vindere og tabere." />
       <ManifestCard number="19" text="Det er legitimt at sige, man er feminist. Feminisme er hverken noget kontroversielt eller farligt." />
-      <Image class="-mb-10.5 -mt-20 md:-mb-9 md:-mt-13 scale-105" src={demo} alt="Skilt med demonstration" />
+      <Image class="-mb-10.5 -mt-20 md:-mb-9 md:-mt-13 scale-105 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={demo} alt="Skilt med demonstration" />
       <ManifestCard number="20" text="Ens køn eller seksualitet definerer ikke, hvorvidt man kan rejse alene, eller hvor man kan færdes efter mørkets frembrud." />
       <ManifestCard number="21" text="Kønsroller er noget, der hører fortiden til. Ord som ”tøsedreng”, ”pigefarver” og ”drengelegetøj” opfattes som absurde. Køn, seksualitet og identitet er helt almindelige emner at tale om uden frygt for udskamning, fordomme, mobning eller ekskludering." />
       <ManifestCard number="22" text="Vi anerkender, at der er plads til forskellighed, og at der er mange måder at være feminist på – både imellem og internt i de feministiske bevægelser. Der er mere, der forener os som feminister, end der adskiller os i sidste ende. Søstersolidaritet og skulder ved skulder er de måder, hvorpå vi besejrer patriarkatet." />
@@ -55,7 +60,7 @@ import Text from "../components/Text.astro";
     </section>
 
     <!-- section om samarbejder -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop-M md:m-sectiontop-D">
       <Image class="col-start-1 col-span-6 mb-4 md:mb-0 md:col-start-7 md:col-span-6 md:order-last lg:col-start-5 lg:col-span-8" src={samarbejder} alt="Kvinder der holder om hinanden fra ryggen" />
       <div class="col-start-1 col-span-4 md:col-start-2 md:col-span-3 md:self-end">
         <Heading htmlheading="h4" size="small" color="paper">Vores samarbejder</Heading>
@@ -63,5 +68,11 @@ import Text from "../components/Text.astro";
         <Link href="#" target="_self" variant="tertiary">læs mere</Link>
       </div>
     </section>
+
+    <!-- knap hover effect ide?? skal slettes herfra! -->
+    <button class="relative overflow-hidden border-2 border-black text-black px-6 py-2 font-medium group">
+      <span class="relative z-10 transition-colors duration-300 group-hover:text-white">Hover mig</span>
+      <span class="absolute bottom-0 left-0 w-full h-0 bg-blue-600 transition-all duration-300 group-hover:h-full"></span>
+    </button>
   </main>
 </MainLayout>
