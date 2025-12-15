@@ -1,23 +1,47 @@
 ---
 // Henter parametrene fra Astro.props
-const { variant = "primary", size = "large" } = Astro.props;
+const { variant = "primary", size = "large", stylingclasses = "" } = Astro.props;
 
-//Definer den styling (Tailwind classes, der gør sig gældende for alle knapper)
-const buttonStyling = "uppercase border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3";
+//Definer den styling Tailwind classes, der gør sig gældende for alle knapper
+const buttonStyling = "rounded-full uppercase border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3 relative overflow-hidden group";
 
-//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter
-const variantClasses = {
-  primary: "rounded-full border-brand text-brand hover:bg-brand hover:text-ink transition-all duration-600",
-  secondary: "rounded-full border-bold text-bold hover:bg-bold hover:text-ink transition-all duration-600",
-  tertiary: "rounded-full border-ink text-ink hover:bg-ink hover:text-bold-300 transition-all duration-600",
-  white: "rounded-full border-paper text-paper hover:bg-paper hover:text-bold-700 transition-all duration-600",
+// De forskellige varianters bg-colors (til animationens fill)
+const variantBgColor = {
+  primary: "bg-brand",
+  secondary: "bg-bold",
+  tertiary: "bg-ink",
+  white: "bg-paper",
 };
 
-//Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
+// De forskellige varianters text hover farver
+const variantTextHover = {
+  primary: "group-hover:text-ink",
+  secondary: "group-hover:text-ink",
+  tertiary: "group-hover:text-bold-300",
+  white: "group-hover:text-bold-700",
+};
+
+// Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter
+const variantClasses = {
+  primary: "border-brand text-brand",
+  secondary: "border-bold text-bold",
+  tertiary: "border-ink text-ink",
+  white: "border-paper text-paper",
+};
+
+// Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.
 const sizeClasses = {
   large: "text-base md:text-xl",
 };
 ---
 
 <!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
-<button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot /></button>
+<button class:list={[stylingclasses, buttonStyling, variantClasses[variant], sizeClasses[size]]}>
+  <!-- Slot-indholdet -->
+  <span class={`relative z-10 transition-colors duration-300 ${variantTextHover[variant]}`}>
+    <slot />
+  </span>
+
+  <!-- Baggrunds-animation -->
+  <span class={`absolute bottom-0 left-0 w-full h-full scale-up-ver-bottom ${variantBgColor[variant]}`}></span>
+</button>
