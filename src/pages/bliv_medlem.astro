@@ -11,7 +11,7 @@ import Button from "../components/Button.astro";
   <main class="bg-brand">
     <!-- Hero tekst -->
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
-      <div class="col-start-1 col-span-4 mt-20 md:col-span-7">
+      <div class="col-start-1 col-span-4 md:col-span-7">
         <Heading htmlheading="h2" size="large" color="ink">VÆR EN DEL AF FORANDRINGEN</Heading>
       </div>
       <div class="col-start-1 -mt-3 col-span-4 md:col-span-7">
@@ -23,7 +23,7 @@ import Button from "../components/Button.astro";
     </section>
 
     <!-- Tekst sektion top -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop: 224px md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop-M md:m-sectiontop-D md:grid-cols-12 md:gap-5 md:mx-12">
       <div class="col-start-1 col-span-6 mt-5 md:mt-10">
         <Heading htmlheading="h3" size="large" color="ink">Bliv Medlem</Heading>
         <div class="">
@@ -34,7 +34,7 @@ import Button from "../components/Button.astro";
 
     <!-- Medlem Card 1 !Kodedele taget fra Daisiy Ui! -->
 
-    <section class="grid grid-cols-6 gap-2.5 mx-5 mt-10 md:mt-20 md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 mt-10 md:mt-20 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop-M md:m-sectiontop-D">
       <div class="col-start-1 col-span-6 md:col-span-5 md:col-start-2">
         <div class="card bg-ink w-full rounded-3xl">
           <div class="card-body">
@@ -106,39 +106,47 @@ import Button from "../components/Button.astro";
     </section>
 
     <!-- FAQ -->
+    <div class="bg-bold">
+      <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 m-sectiontop-M md:m-sectiontop-D">
+        <!-- overskrift start-->
+        <div class="col-start-1 col-span-6 pt-10">
+          <Heading htmlheading="h3" size="medium" color="paper">FAQ</Heading>
+        </div>
 
-    <section class="grid col-span-full gap-2.5 mx-5 bg-bold mt-10">
-      <div class="pt-5">
-        <Heading htmlheading="h3" size="medium" color="paper">FAQ</Heading>
-      </div>
-      <!--FAQ 1 -->
-      <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Som medlem får du</Heading></div>
-        <div class="collapse-content md:max-w-1/2 mt-5 md:mt-10">
-          <Text teksttype="manchet" color="paper"
-            >Adgang og viden om arrangementer, workshops og foredrag, hvor du kan møde eksperter og aktivister, der arbejder for ligestilling. <br /><br />Løbende nyhedsbreve med opdateringer om vores arbejde og indsigt i den aktuelle ligestillingsdebat. <br /><br />Mulighed for at engagere dig aktivt i kampagner, netværk og frivillige aktiviteter, der skaber reel forandring. <br /><br />Stemmeret til generalforsamlinger, så du kan være med til at præge organisationens retning og sikre, at vi sammen arbejder for en fremtid med lige muligheder for alle.<br /><br /> En stærk følelse af at være en del af noget større – et fællesskab, der kæmper for lige rettigheder og lige muligheder for alle.<br /><br /> Masser af muligheder for at gøre en forskel som frivillig (vi kan ALTID bruge seje medlemmer,
-            der gerne vil hjælpe!).<br /><br /> Vores medlemsblad, som dækker vigtige og aktuelle ligestillingsemner – med perspektiver, du ikke finder andre steder. <br /><br />Rabatter på oplevelser, netværkstræf og andre events, hvor du kan møde andre engagerede feminister og blive inspireret. <br /><br />Invitationer til særarrangementer. <br /><br />Vi arbejder løbende på at sikre flere fordele til vores medlemmer, så dit medlemskab ikke bare gør en forskel - men også giver igen.</Text
-          >
-        </div>
-      </div>
+        <!-- overskrift slut-->
 
-      <!--FAQ 2 -->
-      <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Som medlem er du med til at støtte vores arbejde med</Heading></div>
-        <div class="collapse-content md:max-w-1/2 mt-5 md:mt-10">
-          <Text teksttype="manchet" color="paper">Bekæmpelse af vold mod kvinder, kvindedrab, voldtægt og negativ social kontrol<br /><br /> Oplysning om sexisme, #MeToo og digitale krænkelser<br /><br /> Styrkelse af kvinders seksuelle og reproduktive sundhed og rettigheder<br /><br /> Indsatsen for ligeløn og lige repræsentation<br /><br /> Synliggørelse af kvinders ofte oversete sygdomme og livsvilkår<br /><br /> Og meget mere! </Text>
+        <div class="col-start-1 col-span-6 md:col-span-12">
+          <!-- 1. -->
+          <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Som medlem får du</Heading></div>
+            <div class="collapse-content md:max-w-1/2">
+              <Text teksttype="manchet" color="paper"
+                >Adgang og viden om arrangementer, workshops og foredrag, hvor du kan møde eksperter og aktivister, der arbejder for ligestilling. <br /><br /> Løbende nyhedsbreve med opdateringer om vores arbejde og indsigt i den aktuelle ligestillingsdebat.<br /><br /> Mulighed for at engagere dig aktivt i kampagner, netværk og frivillige aktiviteter, der skaber reel forandring. <br /><br />Stemmeret til generalforsamlinger, så du kan være med til at præge organisationens retning og sikre, at vi sammen arbejder for en fremtid med lige muligheder for alle. <br /><br />En stærk følelse af at være en del af noget større – et fællesskab, der kæmper for lige rettigheder og lige muligheder for alle. <br /><br />Masser af muligheder for at gøre en forskel som frivillig (vi kan ALTID bruge seje
+                medlemmer, der gerne vil hjælpe!).<br /><br /> Vores medlemsblad, som dækker vigtige og aktuelle ligestillingsemner – med perspektiver, du ikke finder andre steder. <br /><br />Rabatter på oplevelser, netværkstræf og andre events, hvor du kan møde andre engagerede feminister og blive inspireret. <br /><br />Invitationer til særarrangementer. <br /><br />Vi arbejder løbende på at sikre flere fordele til vores medlemmer, så dit medlemskab ikke bare gør en forskel - men også giver igen.</Text
+              >
+            </div>
+          </div>
+
+          <!-- 2. -->
+          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Som medlem er du med til at støtte vores arbejde med</Heading></div>
+            <div class="collapse-content md:max-w-1/2">
+              <Text teksttype="manchet" color="paper">Bekæmpelse af vold mod kvinder, kvindedrab, voldtægt og negativ social kontrol.<br /><br /> Oplysning om sexisme, #MeToo og digitale krænkelser. <br /><br />Styrkelse af kvinders seksuelle og reproduktive sundhed og rettigheder. <br /><br /> Indsatsen for ligeløn og lige repræsentation.<br /><br /> Synliggørelse af kvinders ofte oversete sygdomme og livsvilkår.<br /><br /> Og meget mere! </Text>
+            </div>
+          </div>
+
+          <!-- 3. -->
+          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Din støtte er vigtig</Heading></div>
+            <div class="collapse-content md:max-w-1/2">
+              <Text teksttype="manchet" color="paper">Da vi er en uafhængig organisation, som ikke modtager statsstøtte, er vores medlemmer ekstra vigtige for os.<br /><br /> Dansk Kvindesamfund står fast på, at ligestilling ikke er en kamp mellem kønnene – det handler om at skabe et samfund med muligheder, ligeværd og lige rettigheder for alle. <br /><br />Sammen skaber vi forandring, og din støtte gør det muligt for os at fortsætte arbejdet. </Text>
+            </div>
+          </div>
         </div>
-      </div>
-      <!--FAQ 3 -->
-      <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Din støtte er vigtig</Heading></div>
-        <div class="collapse-content md:max-w-1/2 mt-5 md:mt-10">
-          <Text teksttype="manchet" color="paper">Da vi er en uafhængig organisation, som ikke modtager statsstøtte, er vores medlemmer ekstra vigtige for os.<br /><br /> <br />Dansk Kvindesamfund står fast på, at ligestilling ikke er en kamp mellem kønnene – det handler om at skabe et samfund med muligheder, ligeværd og lige rettigheder for alle.<br /><br /> Sammen skaber vi forandring, og din støtte gør det muligt for os at fortsætte arbejdet. </Text>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 </MainLayout>
