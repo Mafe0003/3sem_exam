@@ -29,7 +29,7 @@ if (currentPath === "om_os") {
     header: "bg-brand text-ink",
     logo: "text-ink",
     buttonPrimary: "tertiary",
-    buttonSecondary: "secondary",
+    buttonSecondary: "white",
   };
 }
 ---
@@ -62,12 +62,12 @@ if (currentPath === "om_os") {
           <a href="/komponentbibliotek">KOMPONENTBIBLIOTEK</a>
         </li>
         <li>
-          <Button variant={headerTheme.buttonPrimary} stylingClasses={currentPath === "bliv_medlem" ? "underline" : ""}>
+          <Button variant={headerTheme.buttonPrimary} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
             <a href="/bliv_medlem">BLIV MEDLEM</a>
           </Button>
         </li>
         <li>
-          <Button variant={headerTheme.buttonSecondary} stylingClasses={currentPath === "stot_os" ? "underline" : ""}>
+          <Button variant={headerTheme.buttonSecondary} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
             <a href="/stot_os">STØT OS</a>
           </Button>
         </li>
@@ -93,12 +93,12 @@ if (currentPath === "om_os") {
         <a href="/komponentbibliotek" class={currentPath === "komponentbibliotek" ? "underline" : ""}> KOMPONENTBIBLIOTEK </a>
       </li>
       <li class="py-3">
-        <Button variant={headerTheme.buttonPrimary} stylingClasses={currentPath === "bliv_medlem" ? "underline" : ""}>
+        <Button variant={headerTheme.buttonPrimary} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
           <a href="/bliv_medlem">BLIV MEDLEM</a>
         </Button>
       </li>
       <li class="py-3">
-        <Button variant={headerTheme.buttonSecondary} stylingClasses={currentPath === "stot_os" ? "underline" : ""}>
+        <Button variant={headerTheme.buttonSecondary} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
           <a href="/stot_os">STØT OS</a>
         </Button>
       </li>
