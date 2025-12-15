@@ -4,69 +4,89 @@ import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
 import Link from "../components/Link.astro";
 import Button from "../components/Button.astro";
-import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
+import Blog from "../components/Blog.astro";
+import ManifestCard from "../components/ManifestCard.astro";
+import blog3 from "../assets/images/blog3.webp";
 ---
-<MainLayout title="Titel">
-	<main class="container mx-auto p-4">
-		<Heading htmlheading="h1" size="large">Komponentbibliotek</Heading>
-        <Text stylingclasses="italic">Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
-        <hr class="my-4" />
-         <!-- start på typografi -->
-        <section>
-            <Heading htmlheading="h2" size="medium">Typografi & ovesrkrifter</Heading>
-            <Text>Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
-            <Heading htmlheading="h1" size="large">h1 - large - sans</Heading>
-            <Heading htmlheading="h2" size="medium">h2 - medium - sans</Heading>
-            <Heading htmlheading="h3" size="small">h3 - small - sans</Heading>
-            <Heading htmlheading="h1" size="large" font="serif">h1 - large - serif</Heading>
-            <Heading htmlheading="h2" size="medium" font="serif">h2 - medium - serif</Heading>
-            <Heading htmlheading="h3" size="small" font="serif">h3 - small - serif</Heading>
-            <Heading htmlheading="h3" size="large" font="display">h3 - large - display</Heading>
-            <Text teksttype="brødtekst">
-            Her er en sektion brødtekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link: </Link> reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
-            </Text>
-            <Text teksttype="konsultativ">
-            Her en sektion konsultativ tekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
-            </Text>
-            <Text teksttype="brødtekst" stylingclasses="italic">
-            Her er en sektion brødtekst med ekstra css: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link: </Link> reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
-            </Text>
-        </section>
-        <!-- slut på typografi -->
-        <hr class="my-4" />
-        <!-- Link komponent instanser -->
-        <section>
-            <Heading htmlheading="h2" size="medium">Links</Heading>
-            
-            <Text><Link href="#" variant="primary" size="small">Link variant: primary size small</Link></Text>
-            <Text><Link href="#" variant="primary" size="large">Link variant: primary size large</Link></Text>
 
-            <Text><Link href="#" variant="secondary" size="small">Link variant: secondary size small</Link></Text>
-            <Text><Link href="#" variant="secondary" size="large">Link variant: secondary size large</Link></Text>
+<MainLayout title="Komponentbibliotek">
+  <main class="mx-5 md:mx-12">
+    <Heading htmlheading="h1" size="large">Komponentbibliotek</Heading>
+    <Text teksttype="manchet">Her kan du finde alle de komponenter, der er brugt i dette projekt.</Text>
+    <hr class="my-4 md:my-10" />
+    <!-- start på typografi -->
+    <section>
+      <Heading htmlheading="h2" size="medium">Typografi & overskrifter:</Heading>
 
-            <Text><Link href="#" variant="tertiary" size="small">Link variant: tertiary size small</Link></Text>
-            <Text><Link href="#" variant="tertiary" size="large">Link variant: tertiary size large</Link></Text>
-        </section>
-        <!-- Slut på Link komponent instanser -->
-         <hr class="my-4" />
-        <!-- Buttons komponent instanser -->
-        <section>
-            <Heading htmlheading="h2" size="medium">Buttons</Heading>
-          
-            
-            <Text><Button variant="primary" size="small">Button variant: primary size small</Button></Text>
-            <Text><Button variant="primary" size="large">Button variant: primary size large</Button></Text>
+      <Heading htmlheading="h1" size="xlarge">h1 - xlarge - sans</Heading>
+      <Heading htmlheading="h2" size="large">h2 - large - sans</Heading>
+      <Heading htmlheading="h3" size="medium">h3 - medium - sans</Heading>
+      <Heading htmlheading="h4" size="small">h4 - small - sans</Heading>
+      <Heading htmlheading="h5" size="xsmall">h5 - xsmall - sans</Heading>
 
-            <Text><Button variant="secondary" size="small">Button variant: secondary size small</Button></Text>
-            <Text><Button variant="secondary" size="large">Variant: secondary size large</Button></Text>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <Text teksttype="brødtekst">
+          Her er en sektion brødtekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link</Link> reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
+        </Text>
+        <Text teksttype="manchet">
+          Her er en sektion manchet text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam <Link href="#">Default link</Link> reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim!
+        </Text>
+        <Text teksttype="konsultativ">Her en sektion konsultativ tekst: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolorem doloremque commodi eaque quisquam quasi recusandae veniam. Corporis totam reiciendis quibusdam ratione iure aut, numquam tenetur voluptatem exercitationem sequi enim! </Text>
+      </div>
+    </section>
+    <!-- slut på typografi -->
+    <hr class="my-4 md:my-10" />
+    <!-- Link komponent instanser -->
+    <section>
+      <Heading htmlheading="h2" size="medium">Links:</Heading>
+      <Text>Linkets tekststørrelse er responsiv og tilpasser sig skærmstørrelsen ved hjælp af Tailwinds breakpoints.</Text>
+      <div class="flex flex-col gap-2 mt-4">
+        <Link href="#" variant="primary" size="large">Link variant: primary</Link>
+        <div class="bg-brand flex flex-col gap-2 p-4">
+          <Link href="#" variant="secondary" size="large">Link variant: secondary</Link>
+          <Link href="#" variant="tertiary" size="large">Link variant: tertiary</Link>
+        </div>
+      </div>
+    </section>
+    <!-- Slut på Link komponent instanser -->
+    <hr class="my-4 md:my-10" />
+    <!-- Buttons komponent instanser -->
+    <section>
+      <Heading htmlheading="h2" size="medium">Buttons:</Heading>
+      <Text>Knappens tekststørrelse og padding er responsive og tilpasser sig skærmstørrelsen, ligesom link-komponenterne.</Text>
 
-            <Text><Button variant="tertiary" size="small">Button variant: tertiary size small</Button></Text>
-            <Text><Button variant="tertiary" size="large">Variant: tertiary size large</Button></Text>
+      <div class="md:grid md:grid-cols-2 gap-4 mt-4">
+        <div class="flex flex-col items-start gap-2 p-4">
+          <Button variant="primary" size="large">Button variant: primary</Button>
+          <Button variant="secondary" size="large">Button variant: secondary</Button>
+        </div>
+        <div class="bg-brand flex flex-col items-start gap-2 p-4">
+          <Button variant="tertiary" size="large">Button variant: tertiary</Button>
+          <Button variant="white" size="large">Button variant: white</Button>
+        </div>
+      </div>
+    </section>
+    <!-- Slut på Buttons komponent instanser -->
+    <hr class="my-4 md:my-10" />
+    <!-- Blog komponenter -->
+    <section>
+      <Heading htmlheading="h2" size="medium">Cards:</Heading>
+      <Text>Blog-cards fra forsiden & Manifest-cards fra manifestsiden.</Text>
 
-            <Text><Button variant="white" size="small">Button variant: white size small</Button></Text>
-            <Text><Button variant="white" size="large">Variant: white size large</Button></Text>
-        </section>
-        <!-- Slut på Buttons komponent instanser -->
-	</main>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-4 md:gap-8">
+        <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+        <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+        <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+        <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 mt-4 gap-4 md:gap-8">
+        <ManifestCard number="01" text="Alle former for kønnet vold, seksuel chikane, voldtægt, partnervold og kvindedrab er kriminalitetsformer, der hører fortiden til." />
+        <ManifestCard number="01" text="Alle former for kønnet vold, seksuel chikane, voldtægt, partnervold og kvindedrab er kriminalitetsformer, der hører fortiden til." />
+        <ManifestCard number="01" text="Alle former for kønnet vold, seksuel chikane, voldtægt, partnervold og kvindedrab er kriminalitetsformer, der hører fortiden til." />
+      </div>
+    </section>
+    <!-- Slut på blog komponenter -->
+    <hr class="my-4 md:my-10" />
+  </main>
 </MainLayout>
