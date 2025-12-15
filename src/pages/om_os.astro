@@ -24,7 +24,7 @@ import Text from "../components/Text.astro";
     <!-- tekst til venstre slut -->
 
 <!-- billedet + tekst oveni -->
-<div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative">
+<div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative md:mt-30 lg:mt-25">
 
     <!-- Selve billedet -->
     <Image 
@@ -64,12 +64,12 @@ import Text from "../components/Text.astro";
 <!-- billede + tekst oveni slut-->
 
 <!-- 1. paragraph -->
- <div class="mt-15"> 
+ <div class="mt-5 md:mt-10"> 
 <Text teksttype="manchet" >Organisationen, der senere kom til at hedde Dansk Kvindesamfund, blev  stiftet i 1871 i en lejlighed i Blågårdsgade 15, 1. sal. af Frederik og  Matilde Bajer. Til at starte med var det som skandinavisk afdeling af  den schweizisk initierede 'Association Internationale des Femmes' - en international forening for kvinders rettigheder, der ønskede  lokale komiteer i Europa. Senere samme år brød man forbindelsen med  moderorganisationen og dannede den selvstændige organisation, Dansk  Kvindesamfund.</Text>
 </div>
 
 <!-- 2. paragraph -->
- <div class="mt-15"> 
+ <div class="mt-5 md:mt-10"> 
 <Text teksttype="brødtekst" >Ægteparret og barndomsvennerne Matilde og Frederik Bajer delte  feministiske værdier og tanker om kvindens frigørelse. Matilde, den  egentlige stifter, var stor kritiker af kvindens daværende stilling i  samfundet, og blev organisationens første forstanderske (datidens  betegnelse for forkvinde). Frederik, der fungerede som sekretær og  rådgiver, fik en vigtig rolle da han kom i Folketinget og derigennem  skabte en indgang til det parlamentarisk niveau.</Text>
 </div>
 
@@ -80,21 +80,21 @@ import Text from "../components/Text.astro";
 <div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6"> 
 
 <!-- 1. paragraph -->
- <div class="mt-15 md:mt-0"> 
+ <div class="mt-5 md:mt-47"> 
 <Text teksttype="brødtekst" >Udover dem var lærerinden Caroline Testman, Tagea Brandt og Elisabeth  Ouchterlony også en del af organisationens grundlæggelse. Blandt de  tidligste medlemmer var forfatterinden Mathilde Fibiger, som lægger navn til Dansk Kvindesamfunds hæderspris, Mathildeprisen, der uddeles til  personer eller foreninger, der gør en særlig indsats for ligestilling.</Text>
 </div>
 
 <!-- 2. paragraph -->
- <div class="mt-15"> 
+ <div class="mt-5 md:mt-10"> 
 <Text teksttype="brødtekst" >Da Dansk Kvindesamfund blev stiftet var mulighederne for aktivisme  blandt kvinder meget begrænsede. Derfor bestod bestyrelsen og støtterne  primært af lærerinder og gifte fruer, der havde rum, tid og overskud til at engagere sig i velgørenhed og kvindesag. Disse kvinder blev hånende  kaldt hattedamer og beskyldt for at være borgerkvinder, der talte til og om borgerkvinder. Ved en vedtægtsændring blev det fastslået, at  foreningen ikke arbejdede med velgørenhed, men for at ændre selve  kvindekønnets stilling i samfundet bl.a. ved at give adgang til at  forsørge sig selv.  </Text>
 </div>
 
-<div class="mt-15"> 
+<div class="mt-5 md:mt-10"> 
 <Link href="https://danmarkshistorien.lex.dk/Dansk_Kvindesamfund_1871-" target="_blank" variant="secondary">læs mere om historien her</Link>
 </div>
 
 <!-- billede + tekst oveni start-->
-<div class="relative mt-5 md:mt-120"> 
+<div class="relative mt-5 md:mt-72"> 
  <Image 
       class="w-full"
       src={omos2}
@@ -113,10 +113,25 @@ import Text from "../components/Text.astro";
 <!-- section "Danmarks første..." slut-->
 
 <!-- timeline start-->
+<section class="grid grid-cols-6 md:grid-cols-12">
+    <div class="bg-brand col-start-1 col-span-6 grid grid-cols-6"> 
+    <div class="p-5 md:p-12 col-start-1 col-span-6 md:col-span-5">
+    <Heading htmlheading="h3" size="medium" color="ink">Etablering af uddannelser for kvinder</Heading>
+    <Text teksttype="brødtekst" color="ink">Da Dansk Kvindesamfund blev stiftet havde ingen kvinder haft mulighed  for at tage en studentereksamen. Den højeste uddannelse, man kunne opnå  som kvinde var lærerindeuddannelsen. Da Dansk Kvindesamfund mente, at  vejen til kvinders anerkendelse og selvstændighed starter med  uddannelse, tog foreningen initiativ til at oprette en række uddannelser for kvinder.</Text>
+    </div>
+    </div>
+
+    <div class="bg-ink col-start-1 col-span-6 md:col-start-7 md:col-span-6"> 
+    <div class="p-5 md:p-12">
+    <Text teksttype="konsultativ" color="brand">Grundlovsoptog fredag 5. Juli</Text>
+    </div>
+</div>
+
+</section>
 <!-- timeline slut-->
 
 <!-- accordion start -->
-<section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5">
+<section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 m-sectiontop">
 
 <!-- overskrift start--> 
 <div class="col-start-1 col-span-6"> 
@@ -130,7 +145,7 @@ import Text from "../components/Text.astro";
 <div class="collapse collapse-plus bg-spring text-ink rounded-none border-t-2 border-b-2 border-ink">
   <input type="radio" name="my-accordion-3" checked="checked" />
   <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Økonomisk råderet for kvinder</Heading></div>
-  <div class="collapse-content"><Text teksttype="manchet" color="ink">En anden sag Dansk Kvindesamfund engagerede sig i, var at gifte kvinder skulle have råderet over egne tjente penge og arv og formue, der blev  bragt ind i ægteskabet. Efter stærkt pres fra Dansk Kvindesamfund blev loven, der gav gifte kvinder ret til at råde over egne tjente penge,  vedtaget i 1880.</Text></div>
+  <div class="collapse-content col-span-6"><Text teksttype="manchet" color="ink">En anden sag Dansk Kvindesamfund engagerede sig i, var at gifte kvinder skulle have råderet over egne tjente penge og arv og formue, der blev  bragt ind i ægteskabet. Efter stærkt pres fra Dansk Kvindesamfund blev loven, der gav gifte kvinder ret til at råde over egne tjente penge,  vedtaget i 1880.</Text></div>
 </div>
 
 <!-- 2. -->
@@ -183,7 +198,7 @@ import Text from "../components/Text.astro";
 
  <div class="col-start-1 col-span-6 md:col-start-9 md:col-span-4 mt-15 md:mt-35"> 
  <Text teksttype="brødtekst" color="ink">I 2006 tog en gruppe frivillige fra Dansk Kvindesamfund initiativ til at stifte organisationen Dansk Kvindesamfunds Krisecentre. I 2007 blev krisecenteret på Frederiksberg indviet og i 2018 gjaldt det krisecentret på H.C. Andersens Boulevard i København. Tilsammen er der plads til 32 kvinder og deres børn fordelt på de to krisecentre. Dansk Kvindesamfunds Krisecentre tilbyder rådgivning og krisecenterophold. Derudover udbreder organisationen viden om kønsbaseret vold og driver politiske tiltag og projekter, som styrker hjælpen til voldsudsatte kvinder og børn.</Text>
-  <div class="mt-15"> 
+  <div class="mt-5 md:mt-10"> 
   <Link href="https://www.krisecentrene.dk" target="_blank" variant="secondary">besøg dansk kvindesamfunds krisecenter</Link>
   </div>
  </div>
@@ -198,20 +213,20 @@ import Text from "../components/Text.astro";
  <Heading htmlheading="h3" size="medium" color="ink">#Metoo, samtykkelov og psykisk vold</Heading>
  <Text teksttype="manchet" color="ink">Da #MeToo-bølgen ramte Danmark i 2017, stod Dansk Kvindesamfund i front som en af de første til at dele kampråbet #MeToo. Gennem de forskellige bølger, der har afsløret overgreb og sexistiske kulturer indenfor forskellige brancher, har vi været en stærk stemme for dem, der tør bryde tavsheden og dele deres oplevelser med sexisme og krænkelser.</Text>
  <Image 
-      class="mt-15 w-full"
+      class="mt-5 w-full"
       src={omos_sidst}
       alt="kvinde med megafonen"
     />
 </div>
 
  <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-5 md:mt-35"> 
-    <div class="mt-15"> 
+    <div class="mt-5 md:mt-10"> 
     <Text teksttype="brødtekst" color="ink">Dansk Kvindesamfund var allerede i 2013 med til at starte den danske del af den internationale kampagne Everyday Sexism Project, der samlede vidnesbyrd om sexisme i Danmark. Everyday Sexism Project er i dag en selvstændig NGO, der bekæmper og oplyser om hverdagssexisme.</Text>
     </div>
-    <div class="mt-15"> 
+    <div class="mt-5 md:mt-10"> 
     <Text teksttype="brødtekst" color="ink">Vi har også bidraget til nogle af de største ligestillingsfremskridt i nyere tid: vi var en af kræfterne bag vedtagelsen af samtykkelovgivningen, som sikrer retten til selvbestemmelse over egen krop, og definerer handlinger af seksuel karakter uden samtykke som voldægt.</Text>
     </div>
-    <div class="mt-15">
+    <div class="mt-5 md:mt-10">
     <Text teksttype="brødtekst" color="ink">Vi spillede en central rolle i kriminaliseringen af psykisk vold, som også er et vigtigt skridt for ligestillingen, da det anerkender ofre for de ofte usynlige magtforhold, som især kvinder rammes af i nære relationer. Loven sender et klart signal om, at også den vold, som ikke efterlader blå mærker er uacceptabel, og styrker retssikkerheden for udsatte.</Text>
     </div>
 </div>
@@ -219,5 +234,201 @@ import Text from "../components/Text.astro";
 </section>
 <!-- section "#metoo ..." slut-->
 
+<!-- TEST -->
+ <ul class="timeline timeline-vertical hidden lg:block">
+  <li>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">First Macintosh computer</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iMac</div>
+    <hr />
+  </li>
+  <!-- definerer elementet man taler om -->
+  <li x-data="{open: false}">
+    <hr />
+    <!-- event handler // hvad der skal klikkes/mouse overes på mm. -->
+    <div class="timeline-middle" x-on:click="open =! open">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <!-- styrer hvad der skal vises eller fjernes -->
+    <div x-show="open" class="timeline-end timeline-box" ><span >iPod</span></div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iPhone</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">Apple Watch</div>
+  </li>
+</ul>
+
+ <ul class="timeline timeline-vertical lg:hidden">
+  <li>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">mobil timeline</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iMac</div>
+    <hr />
+  </li>
+  <li x-data="{open: false}">
+    <hr />
+    <div class="timeline-middle" x-on:click="open =! open">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div  class="timeline-end timeline-box" ><span x-show="open">iPod</span></div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iPhone</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">Apple Watch</div>
+  </li>
+</ul>
+<!-- test slut -->
   </main>
 </MainLayout>
