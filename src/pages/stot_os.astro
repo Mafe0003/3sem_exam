@@ -1,0 +1,170 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import hero from "../assets/images/stot-os-hero.webp";
+import Heading from "../components/Heading.astro";
+import Text from "../components/Text.astro";
+import mobilepay from "../assets/images/mobilepay.webp";
+import visa from "../assets/images/visa.webp";
+import dankort from "../assets/images/dankort.webp";
+import Button from "../components/Button.astro";
+---
+
+<MainLayout title="Stot" class="">
+  <main class="bg-brand">
+    <!-- Hero tekst -->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+      <div class="col-start-1 col-span-4 mt-20 md:col-span-8">
+        <Heading htmlheading="h2" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
+      </div>
+      <div class="col-start-1 col-span-4 -mt-5 md:col-span-6">
+        <Text teksttype="manchet" color="ink">Alle kan give et bidrag til vores arbejdet for ligestilling.</Text>
+      </div>
+      <div class="col-span-full md:col-start-5">
+        <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
+      </div>
+    </section>
+
+    <!-- Tekst sektion -->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop md:grid-cols-12 md:gap-5 md:mx-12">
+      <div class="col-start-1 col-span-6 md:col-span-5">
+        <Heading htmlheading="h3" size="large" color="ink">Donationer</Heading>
+        <div class="mb-20">
+          <Text teksttype="brødtekst" color="ink">Her på siden kan du give et bidrag til arbejdet for ligestilling. <br /><br /> Det er også her du kan donere til vores §8A-indsamling, hvilket betyder at vi kan søge støtte til foreningens aktiviteter (Statens Udlodningspulje).<br /><br /> Dit bidrag er med til at sikre, at vi kan fortsætte vores arbejde med at sætte ligestilling på dagsordenen.<br /><br /> Du kan enten vælge at donere de 200kr en gang eller at opsætte en fast månedlig donation. OBS; Donationer er ikke det samme som medlemskab. <br /><br />Ønsker du at blive medlem og få adgang til medlemsfordele, så skal det gøres her; Bliv medlem </Text>
+        </div>
+        <Heading htmlheading="h5" size="xsmall" color="ink">Hvad går dine penge til ved donation?</Heading>
+
+        <ul class="list-disc ml-5 text-ink col-span-4">
+          <li class="pb-5"><Text teksttype="brødtekst" color="ink">Når du donerer til Dansk Kvindesamfund, er du med til at støtte et vigtigt arbejde for ligestilling og for at hjælpe voldsramte kvinder og børn i Danmark.</Text></li>
+          <li class="pb-5"><Text teksttype="brødtekst" color="ink">Din donation går blandt andet til rådgivning, krisecenterophold, forebyggende indsatser og konkrete projekter, der gør det muligt for kvinder og børn at komme fri af vold og få en tryg ny start.</Text></li>
+          <li class="pb-5"><Text teksttype="brødtekst" color="ink">Samtidig bidrager du til organisationens oplysnings- og rettighedsarbejde, som sætter fokus på køn, vold og ligestilling i den offentlige debat.</Text></li>
+        </ul>
+
+        <div class="mt-10 mb-10">
+          <Heading htmlheading="h5" size="xsmall" color="ink">Arv og testamente</Heading>
+          <Text teksttype="brødtekst" color="ink">Det er muligt at støtte Dansk Kvindesamfunds arbejde for ligestilling ved at tilgodese os i dit testamente. Din arv kan bidrage til vores indsats for at skabe et mere lige og retfærdigt samfund. På Det Gode Testamente kan du læse mere om, hvordan du nemt kan udfærdige et testamente og sikre, at din støtte gør en forskel for kommende generationer.</Text>
+        </div>
+      </div>
+
+      <!-- Form -->
+
+      <div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6">
+        <Heading htmlheading="h4" size="xsmall" color="ink">Betalingsform</Heading>
+        <div class="flex w-full border-2 md:border-4 border-ink rounded-full mt-4">
+          <label class="flex-1 text-center cursor-pointer uppercase text-base md:text-xl">
+            <input type="radio" name="gruppe1" value="fast" class="hidden peer" checked />
+            <span class="block rounded-l-full px-4 py-2.5 md:px-5 md:py-3 text-ink transition duration-400 peer-checked:bg-ink peer-checked:text-brand"> Støt fast </span>
+          </label>
+          <label class="flex-1 text-center cursor-pointer uppercase text-base md:text-xl">
+            <input type="radio" name="gruppe1" value="engangs" class="hidden peer" />
+            <span class="block rounded-r-full px-4 py-2.5 md:px-5 md:py-3 text-ink transition duration-400 peer-checked:bg-ink peer-checked:text-brand"> Enkelt donation </span>
+          </label>
+        </div>
+        <div class="-mb- pl-1 mt-10">
+          <Heading htmlheading="h5" size="xsmall" color="ink">Beløb</Heading>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="col-span-full">
+            <label class="flex items-center gap-3 cursor-pointer mt-5">
+              <input type="checkbox" checked="checked" class="checkbox" />
+              <div class="grid grid-cols-4 gap-2 items-center">
+                <Text teksttype="brødtekst" color="ink">200 kr</Text>
+              </div>
+            </label>
+          </div>
+          <div class="col-span-full">
+            <label class="flex items-center gap-3 cursor-pointer mt-5">
+              <input type="checkbox" checked="checked" class="checkbox" />
+              <div class="grid grid-cols-4 gap-2 items-center">
+                <Text teksttype="brødtekst" color="ink">Andet</Text>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="-mb- mt-10">
+          <Heading htmlheading="h5" size="xsmall" color="ink">Betalingsmetode</Heading>
+        </div>
+        <div class="">
+          <div class="">
+            <label class="flex items-center gap-3 cursor-pointer">
+              <input type="checkbox" checked="checked" class="checkbox" />
+              <div class="grid grid-cols-2 gap-3 items-center">
+                <Text teksttype="brødtekst" color="ink">Betalingskort</Text>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <Image class="" src={dankort} alt="Dankort logo" />
+                <Image class="" src={visa} alt="Visa logo" />
+              </div>
+            </label>
+          </div>
+          <label class="flex items-center gap-3 cursor-pointer mt-5">
+            <input type="checkbox" checked="checked" class="checkbox" />
+            <div class="grid grid-cols-4 gap-2 items-center">
+              <Text teksttype="brødtekst" color="ink">Mobilepay</Text>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <Image class="" src={mobilepay} alt="mobilepay logo" />
+            </div>
+          </label>
+        </div>
+
+        <div class="mt-20">
+          <label class="text-ink text-base md:text-xl">
+            Fornavn
+            <input type="text" placeholder="Ida" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+        <div>
+          <label class="text-ink text-base md:text-xl">
+            Efternavn
+            <input type="text" placeholder="Hansen" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+        <div>
+          <label class="text-ink text-base md:text-xl">
+            Postnr.
+            <input type="text" placeholder="2300" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+        <div>
+          <label class="text-ink text-base md:text-xl">
+            By
+            <input type="text" placeholder="København S" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+        <div>
+          <label class="text-ink text-base md:text-xl">
+            Email
+            <input type="text" placeholder="idahansen@gmail.com" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+        <div>
+          <label class="text-ink text-base md:text-xl">
+            Telefon
+            <input type="text" placeholder="20 65 31 81" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+        <div>
+          <label class="text-ink text-base md:text-xl">
+            CPR-nr.
+            <input type="text" placeholder="220901 - 7226" class="my-4 w-full rounded-full border-2 md:border-4 border-ink bg-transparent px-4 py-2.5 md:px-7 md:py-5 focus:outline-none" />
+          </label>
+        </div>
+
+        <div class="flex justify-end">
+          <Button variant="tertiary">STØT</Button>
+        </div>
+        <div class="mt-10">
+          <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+            <div class="collapse-title font-semibold">Læs vores betingelser her</div>
+            <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+          </div>
+        </div>
+        <div class="mt-5">
+          <Text teksttype="brødtekst" color="ink">Tak for at støtte vores arbejde. Du er velkommen til at frabede dig, at vi af og til kontakter dig med nyt om Dansk Kvindesamfund. På Privatlivspolitik fortæller vi, hvordan vi passer på dine persondata, og hvordan du kan takke nej til henvendelser fra os.</Text>
+        </div>
+      </div>
+    </section>
+    <!-- Arv og testamente -->
+  </main>
+</MainLayout>
