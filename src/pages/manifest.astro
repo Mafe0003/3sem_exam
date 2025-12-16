@@ -4,7 +4,7 @@ import Heading from "../components/Heading.astro";
 import { Image } from "astro:assets";
 import manifest from "../assets/images/manifest.webp";
 import kvinderåb from "../assets/images/kvinderåb.webp";
-import rødstrømpe from "../assets/images/rødstrømpe.webp";
+import rødstrømpe from "../assets/images/rodstrompe.webp";
 import demo from "../assets/images/demo.webp";
 import samarbejder from "../assets/images/samarbejder.webp";
 import ManifestCard from "../components/ManifestCard.astro";
@@ -16,7 +16,7 @@ import Text from "../components/Text.astro";
   <main class="bg-bold-700">
     <!-- hero section -->
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
-      <div class="col-start-1 col-span-6 md:col-span-5">
+      <div class="col-start-1 col-span-6 md:col-span-5 pt-sectiontop">
         <Heading htmlheading="h1" size="large" color="paper">Feministisk fremtidsmanifest</Heading>
         <Heading size="xsmall" color="paper">24 punkter for frihed, ligestilling og ligeværd samlet i ét manifest for de generationer, der kommer efter os. Det er vores drøm for fremtiden og det, vi som organisation arbejder hen imod.</Heading>
       </div>
@@ -60,7 +60,7 @@ import Text from "../components/Text.astro";
     </section>
 
     <!-- section om samarbejder -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop-M md:m-sectiontop-D">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D pb-sectionbottom">
       <Image class="col-start-1 col-span-6 mb-4 md:mb-0 md:col-start-7 md:col-span-6 md:order-last lg:col-start-5 lg:col-span-8" src={samarbejder} alt="Kvinder der holder om hinanden fra ryggen" />
       <div class="col-start-1 col-span-4 md:col-start-2 md:col-span-3 md:self-end">
         <Heading htmlheading="h4" size="small" color="paper">Vores samarbejder</Heading>

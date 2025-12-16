@@ -40,7 +40,7 @@
 
   /*Padding top og bottom mellem headeren og første sektion og mellem sidste sektion og footeren*/
   --spacing-sectiontop: 40px;
-  --spacing-sectionbottom: 40px;
+  --spacing-sectionbottom: 80px;
 
   /*Infinite scroll animation på banneren*/
   --animate-infinite-scroll: infinite-scroll 25s linear infinite;

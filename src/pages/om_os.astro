@@ -12,293 +12,276 @@ import Text from "../components/Text.astro";
 
 <MainLayout title="Om os" class="">
   <main class="bg-spring">
-    
-<!-- section "Vores historie" start-->
-<section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+    <!-- section "Vores historie" start-->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+      <!-- tekst til venstre start -->
+      <div class="col-start-1 col-span-6 md:col-span-5 pt-sectiontop">
+        <Heading htmlheading="h1" size="large" color="ink">Vores historie</Heading>
+        <Heading htmlheading="h2" size="xsmall" color="ink">Dansk Kvindesamfund har spillet en vigtig rolle i kvindepolitikken i Danmark ved at samle feministiske forkæmpere, igangsætte initiativer og være en markant stemme i ligestillingsdebatten.</Heading>
+      </div>
+      <!-- tekst til venstre slut -->
 
-    <!-- tekst til venstre start -->
-    <div class="col-start-1 col-span-6 md:col-span-5 pt-sectiontop"> 
-     <Heading htmlheading="h1" size="large" color="ink">Vores historie</Heading>
-     <Heading htmlheading="h2" size="xsmall" color="ink">Dansk Kvindesamfund har spillet en vigtig rolle i kvindepolitikken i Danmark ved at samle feministiske forkæmpere, igangsætte initiativer og være en markant stemme i ligestillingsdebatten.</Heading>
-    </div>
-    <!-- tekst til venstre slut -->
+      <!-- billedet + tekst oveni -->
+      <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative md:mt-30 lg:mt-25">
+        <!-- Selve billedet -->
+        <Image class="w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_img} alt="billede af de tre kvinder i heroen på om os siden" />
 
-<!-- billedet + tekst oveni -->
-<div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative md:mt-30 lg:mt-25">
-
-    <!-- Selve billedet -->
-    <Image 
-      class="w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out"
-      src={omos_img}
-      alt="billede af de tre kvinder i heroen på om os siden"
-    />
-
-    <!-- Blå streg + tekst ovenpå billedet -->
+        <!-- Blå streg + tekst ovenpå billedet -->
         <!-- Tekst -->
-        <div class="absolute bottom-4 -right-4 md:bottom-20 lg:bottom-4 bg-[url(/billedetekst.svg)]"> 
-        <Text teksttype="konsultativ" color="paper">Suzanne Brøgger og Tine Bryld, 1984</Text>
-        </div>
-    
-</div>
-</section>
-<!-- section "Vores historie" slut-->
-
-<!-- section "Danmarks første..." start-->
-<section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
-<!-- første kolonne -->
-<div class="col-start-1 col-span-6 md:col-span-5">
-<Heading htmlheading="h3" size="medium" color="ink">Danmarks første kvinderettigheds-organisation stiftes</Heading>
-
-<!-- billede + tekst oveni start-->
-<div class="relative"> 
- <Image 
-      class="w-full"
-      src={omos1}
-      alt="Frederik og Matilde Bajer"
-    />
-
-<div class="absolute top-4 -right-4 bg-[url(/billedetekst.svg)]"> 
-<Text teksttype="konsultativ" color="paper">Fredrik og Matilde Bajer</Text>
-</div>
-</div>
-<!-- billede + tekst oveni slut-->
-
-<!-- 1. paragraph -->
- <div class="mt-5 md:mt-10"> 
-<Text teksttype="manchet" >Organisationen, der senere kom til at hedde Dansk Kvindesamfund, blev  stiftet i 1871 i en lejlighed i Blågårdsgade 15, 1. sal. af Frederik og  Matilde Bajer. Til at starte med var det som skandinavisk afdeling af  den schweizisk initierede 'Association Internationale des Femmes' - en international forening for kvinders rettigheder, der ønskede  lokale komiteer i Europa. Senere samme år brød man forbindelsen med  moderorganisationen og dannede den selvstændige organisation, Dansk  Kvindesamfund.</Text>
-</div>
-
-<!-- 2. paragraph -->
- <div class="mt-5 md:mt-10"> 
-<Text teksttype="brødtekst" >Ægteparret og barndomsvennerne Matilde og Frederik Bajer delte  feministiske værdier og tanker om kvindens frigørelse. Matilde, den  egentlige stifter, var stor kritiker af kvindens daværende stilling i  samfundet, og blev organisationens første forstanderske (datidens  betegnelse for forkvinde). Frederik, der fungerede som sekretær og  rådgiver, fik en vigtig rolle da han kom i Folketinget og derigennem  skabte en indgang til det parlamentarisk niveau.</Text>
-</div>
-
-</div>
-<!-- første kolonne slut -->
-
-<!-- anden kolonne -->
-<div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6"> 
-
-<!-- 1. paragraph -->
- <div class="mt-5 md:mt-47"> 
-<Text teksttype="brødtekst" >Udover dem var lærerinden Caroline Testman, Tagea Brandt og Elisabeth  Ouchterlony også en del af organisationens grundlæggelse. Blandt de  tidligste medlemmer var forfatterinden Mathilde Fibiger, som lægger navn til Dansk Kvindesamfunds hæderspris, Mathildeprisen, der uddeles til  personer eller foreninger, der gør en særlig indsats for ligestilling.</Text>
-</div>
-
-<!-- 2. paragraph -->
- <div class="mt-5 md:mt-10"> 
-<Text teksttype="brødtekst" >Da Dansk Kvindesamfund blev stiftet var mulighederne for aktivisme  blandt kvinder meget begrænsede. Derfor bestod bestyrelsen og støtterne  primært af lærerinder og gifte fruer, der havde rum, tid og overskud til at engagere sig i velgørenhed og kvindesag. Disse kvinder blev hånende  kaldt hattedamer og beskyldt for at være borgerkvinder, der talte til og om borgerkvinder. Ved en vedtægtsændring blev det fastslået, at  foreningen ikke arbejdede med velgørenhed, men for at ændre selve  kvindekønnets stilling i samfundet bl.a. ved at give adgang til at  forsørge sig selv.  </Text>
-</div>
-
-<div class="mt-5 md:mt-10"> 
-<Link href="https://danmarkshistorien.lex.dk/Dansk_Kvindesamfund_1871-" target="_blank" variant="secondary">læs mere om historien her</Link>
-</div>
-
-<!-- billede + tekst oveni start-->
-<div class="relative mt-5 md:mt-72"> 
- <Image 
-      class="w-full"
-      src={omos2}
-      alt="grundlovsoptog fredag den 5. juli"
-    />
-
-<div class="absolute bottom-4 -right-4 bg-[url(/billedetekst.svg)]"> 
-<Text teksttype="konsultativ" color="paper">Grundlovsoptog fredag 5. Juli</Text>
-</div>
-</div>
-<!-- billede + tekst oveni slut-->
-
-</div>
-
-</section>
-<!-- section "Danmarks første..." slut-->
-
-<!-- timeline start-->
-<section class="grid grid-cols-6 md:grid-cols-12">
-
-<!-- kassen til venstre -->
-<div class="bg-brand col-start-1 col-span-6 grid grid-cols-6"> 
-    <div class="p-5 md:p-12 col-start-1 col-span-6 md:col-span-5">
-    <Heading htmlheading="h3" size="medium" color="ink">Etablering af uddannelser for kvinder</Heading>
-    <Text teksttype="brødtekst" color="ink">Da Dansk Kvindesamfund blev stiftet havde ingen kvinder haft mulighed  for at tage en studentereksamen. Den højeste uddannelse, man kunne opnå  som kvinde var lærerindeuddannelsen. Da Dansk Kvindesamfund mente, at  vejen til kvinders anerkendelse og selvstændighed starter med  uddannelse, tog foreningen initiativ til at oprette en række uddannelser for kvinder.</Text>
-    </div>
-</div>
-<!-- kassen til højre -->
-<div class="bg-ink col-start-1 col-span-6 md:col-start-7 md:col-span-6"> 
- <div class="relative p-5 md:p-12">
-
-  <!-- Lodret linje -->
-  <div class="absolute left-6 top-0 h-full w-[3px] bg-brand"></div>
-
-  <!-- Timeline items -->
-  <ul class="space-y-16">
-
-    <!-- ITEM 1-->
-    <li class="relative flex items-start group">
-      <!-- Prik -->
-      <div class="relative z-10 mt-1 md:-left-8">
-        <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-bold-700"></div>
-      </div>
-
-      <!-- Indhold -->
-      <div class="ml-10 md:ml-4">
-        <div class="font-bold underline decoration-brand underline-offset-4">
-        <Text teksttype="manchet" color="brand">1872</Text>
-        </div>
-    
-        <!-- Hover tekst -->
-        <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
-        <Text teksttype="brødtekst" color="brand"> 
-          Handelsskolen for kvinder, der uddannede kvinder til at arbejde
-          med handel og bogholderi.</Text>
+        <div class="absolute bottom-4 -right-4 md:bottom-20 lg:bottom-4 bg-[url(/billedetekst.svg)]">
+          <Text teksttype="konsultativ" color="paper">Suzanne Brøgger og Tine Bryld, 1984</Text>
         </div>
       </div>
-    </li>
+    </section>
+    <!-- section "Vores historie" slut-->
 
-    <!-- ITEM 2-->
-    <li class="relative flex items-start group">
-      <div class="relative z-10 mt-1 md:-left-8">
-        <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-bold-700"></div>
-      </div>
+    <!-- section "Danmarks første..." start-->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
+      <!-- første kolonne -->
+      <div class="col-start-1 col-span-6 md:col-span-5">
+        <Heading htmlheading="h3" size="medium" color="ink">Danmarks første kvinderettigheds-organisation stiftes</Heading>
 
-      <div class="ml-10 md:ml-4">
-        <div class="font-bold underline decoration-brand underline-offset-4"> 
-        <Text teksttype="manchet" color="brand">1873</Text>
+        <!-- billede + tekst oveni start-->
+        <div class="relative">
+          <Image class="w-full" src={omos1} alt="Frederik og Matilde Bajer" />
+
+          <div class="absolute top-4 -right-4 bg-[url(/billedetekst.svg)]">
+            <Text teksttype="konsultativ" color="paper">Fredrik og Matilde Bajer</Text>
+          </div>
         </div>
-        <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
-        <Text teksttype="brødtekst" color="brand"> 
-          Søndagsskolen for Kvinder, hvor arbejderkvinder blev undervist gratis i dansk, matematik og skrivning. Skolens økonomi var baseret på donationer og lærerne arbejdede frivilligt.</Text>
-        </div>
-      </div>
-    </li>
+        <!-- billede + tekst oveni slut-->
 
-    <!-- ITEM 3-->
-    <li class="relative flex items-start group">
-      <div class="relative z-10 mt-1 md:-left-8">
-        <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-bold-700"></div>
-      </div>
-
-      <div class="ml-10 md:ml-4">
-        <div class="font-bold underline decoration-brand underline-offset-4"> 
-        <Text teksttype="manchet" color="brand">1876</Text>
+        <!-- 1. paragraph -->
+        <div class="mt-5 md:mt-10">
+          <Text teksttype="manchet">Organisationen, der senere kom til at hedde Dansk Kvindesamfund, blev stiftet i 1871 i en lejlighed i Blågårdsgade 15, 1. sal. af Frederik og Matilde Bajer. Til at starte med var det som skandinavisk afdeling af den schweizisk initierede 'Association Internationale des Femmes' - en international forening for kvinders rettigheder, der ønskede lokale komiteer i Europa. Senere samme år brød man forbindelsen med moderorganisationen og dannede den selvstændige organisation, Dansk Kvindesamfund.</Text>
         </div>
-        <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
-        <Text teksttype="brødtekst" color="brand"> 
-        Tegneskolen for Kvinder (i dag Danmarks Designskole), hvor kvinder blev undervist i tegning og andre færdigheder, der kunne give adgang til at få arbejde som kunsthåndværker fx i industrien. 
-        Arkitekten Vilhelm Klein, der sad i Dansk Kvindesamfunds styrelse, tegnede bygningen, der i dag huser et af Dansk Kvindesamfunds Krisecentre.</Text>
+
+        <!-- 2. paragraph -->
+        <div class="mt-5 md:mt-10">
+          <Text teksttype="brødtekst">Ægteparret og barndomsvennerne Matilde og Frederik Bajer delte feministiske værdier og tanker om kvindens frigørelse. Matilde, den egentlige stifter, var stor kritiker af kvindens daværende stilling i samfundet, og blev organisationens første forstanderske (datidens betegnelse for forkvinde). Frederik, der fungerede som sekretær og rådgiver, fik en vigtig rolle da han kom i Folketinget og derigennem skabte en indgang til det parlamentarisk niveau.</Text>
         </div>
       </div>
-    </li>
+      <!-- første kolonne slut -->
 
-  </ul>
+      <!-- anden kolonne -->
+      <div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6">
+        <!-- 1. paragraph -->
+        <div class="mt-5 md:mt-47">
+          <Text teksttype="brødtekst">Udover dem var lærerinden Caroline Testman, Tagea Brandt og Elisabeth Ouchterlony også en del af organisationens grundlæggelse. Blandt de tidligste medlemmer var forfatterinden Mathilde Fibiger, som lægger navn til Dansk Kvindesamfunds hæderspris, Mathildeprisen, der uddeles til personer eller foreninger, der gør en særlig indsats for ligestilling.</Text>
+        </div>
 
-</div>
-</div>
-</section>
-<!-- timeline slut-->
+        <!-- 2. paragraph -->
+        <div class="mt-5 md:mt-10">
+          <Text teksttype="brødtekst">Da Dansk Kvindesamfund blev stiftet var mulighederne for aktivisme blandt kvinder meget begrænsede. Derfor bestod bestyrelsen og støtterne primært af lærerinder og gifte fruer, der havde rum, tid og overskud til at engagere sig i velgørenhed og kvindesag. Disse kvinder blev hånende kaldt hattedamer og beskyldt for at være borgerkvinder, der talte til og om borgerkvinder. Ved en vedtægtsændring blev det fastslået, at foreningen ikke arbejdede med velgørenhed, men for at ændre selve kvindekønnets stilling i samfundet bl.a. ved at give adgang til at forsørge sig selv. </Text>
+        </div>
 
-<!-- accordion start -->
-<section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 mt-sectiontop-M md:mt-sectiontop-D">
+        <div class="mt-5 md:mt-10">
+          <Link href="https://danmarkshistorien.lex.dk/Dansk_Kvindesamfund_1871-" target="_blank" variant="secondary">læs mere om historien her</Link>
+        </div>
 
-<!-- overskrift start--> 
-<div class="col-start-1 col-span-6"> 
-<Heading htmlheading="h3" size="medium" color="ink">Andre kvindepolitiske kampe</Heading>   
-</div>
+        <!-- billede + tekst oveni start-->
+        <div class="relative mt-5 md:mt-72">
+          <Image class="w-full" src={omos2} alt="grundlovsoptog fredag den 5. juli" />
 
-<!-- overskrift slut--> 
+          <div class="absolute bottom-4 -right-4 bg-[url(/billedetekst.svg)]">
+            <Text teksttype="konsultativ" color="paper">Grundlovsoptog fredag 5. Juli</Text>
+          </div>
+        </div>
+        <!-- billede + tekst oveni slut-->
+      </div>
+    </section>
+    <!-- section "Danmarks første..." slut-->
 
-<div class="col-start-1 col-span-6 md:col-span-12"> 
-<!-- 1. -->
-<div class="collapse collapse-plus bg-spring text-ink rounded-none border-t-2 border-b-2 border-ink">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Økonomisk råderet for kvinder</Heading></div>
-  <div class="collapse-content md:max-w-1/2"><Text teksttype="manchet" color="ink">En anden sag Dansk Kvindesamfund engagerede sig i, var at gifte kvinder skulle have råderet over egne tjente penge og arv og formue, der blev  bragt ind i ægteskabet. Efter stærkt pres fra Dansk Kvindesamfund blev loven, der gav gifte kvinder ret til at råde over egne tjente penge,  vedtaget i 1880.</Text></div>
-</div>
+    <!-- timeline start-->
+    <section class="grid grid-cols-6 md:grid-cols-12 mt-sectiontop-M md:mt-sectiontop-D">
+      <!-- kassen til venstre -->
+      <div class="bg-brand col-start-1 col-span-6 grid grid-cols-6">
+        <div class="p-5 md:p-12 col-start-1 col-span-6 md:col-span-5">
+          <Heading htmlheading="h3" size="medium" color="ink">Etablering af uddannelser for kvinder</Heading>
+          <Text teksttype="brødtekst" color="ink">Da Dansk Kvindesamfund blev stiftet havde ingen kvinder haft mulighed for at tage en studentereksamen. Den højeste uddannelse, man kunne opnå som kvinde var lærerindeuddannelsen. Da Dansk Kvindesamfund mente, at vejen til kvinders anerkendelse og selvstændighed starter med uddannelse, tog foreningen initiativ til at oprette en række uddannelser for kvinder.</Text>
+        </div>
+      </div>
+      <!-- kassen til højre -->
+      <div class="bg-ink col-start-1 col-span-6 md:col-start-7 md:col-span-6">
+        <div class="relative p-5 md:p-12">
+          <!-- Lodret linje -->
+          <div class="absolute left-6 top-0 h-full w-[3px] bg-brand"></div>
 
-<!-- 2. -->
-<div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Seksualnormer</Heading></div>
-  <div class="collapse-content md:max-w-1/2"><Text teksttype="manchet" color="ink">I 1880’erne startede en offentlig debat om samfundets seksualnormer, kaldet sædelighedsfejden. Selvom sex uden for ægteskabet var ulovligt for både mænd og kvinder, så man ofte igennem fingre med, når mænd havde sex udenfor ægteskabet eller gik til prostituerede. Dansk Kvindesamfund plæderede for lige normer for kvinder og mænd, hvilket for dem betød, at seksualitet kun hørte til inden for ægteskabet. I 1887 rejste styrelsesmedlem og stifter af Dansk Kvindesamfunds medlemsblad Kvinden & Samfundet, Elisabeth Grundtvig en kritik af mænds seksuelle aktiviteter udenfor ægteskabet, da det havde konsekvenser for kvinder (graviditeter, fødsler og kønssygdomme, der dengang kunne føre til invalidering, økonomisk ruin og social udstødelse). Det førte til sagsanlæg og brevskænderier mellem hende og litteraten Georg Brandes, som mente, at kønsforhold tilhørte det private, og dermed ikke noget offentligheden skulle blande sig i eller dømme moralsk.</Text></div>
-</div>
+          <!-- Timeline items -->
+          <ul class="space-y-16">
+            <!-- ITEM 1-->
+            <li class="relative flex items-start group">
+              <!-- Prik -->
+              <div class="relative z-10 mt-1 md:-left-8">
+                <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-bold-700"></div>
+              </div>
 
-<!-- 3. -->
-<div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Kampen for kvinders valgret</Heading></div>
-  <div class="collapse-content md:max-w-1/2"><Text teksttype="manchet" color="ink">Kvinders valgret var kulminationen på årtiers kamp for demokratisk anerkendelse og en stor indsats fra den samlede kvindebevægelse. Ud fra ønsket om at samle så mange kvinder som muligt om kvindesagen havde Dansk Kvindesamfund forsøgt at balancere i spørgsmålet om kvinders valgret, der på det tidspunkt blev set som et radikalt krav. Først meldte man i 1887 ud, at man støttede op om valgretskravet, men trak det hurtigt tilbage, da man var bange for politikernes reaktion og for at splitte medlemsskaren, der havde forskellige holdninger. Det var først i 1906 at Dansk Kvindesamfund meldte klart ud, at man var for valgret. Den kommunale valgret kom i 1908 og stemmeret til Folketing og Landsting fulgte i 1915. Med Dansk Kvindesamfund i spidsen gik 12.000 kvinder i sejrsoptog gennem Københavns gader og sluttede af på Amalienborg Slotsplads for at fejre kvinders valgret d.5. juni 1915.</Text></div>
-</div>
+              <!-- Indhold -->
+              <div class="ml-10 md:ml-4">
+                <div class="font-bold underline decoration-brand underline-offset-4">
+                  <Text teksttype="manchet" color="brand">1872</Text>
+                </div>
 
-<!-- 4. -->
-<div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Abort</Heading></div>
-  <div class="collapse-content md:max-w-1/2"><Text teksttype="manchet" color="ink">I 1932 blev der nedsat en svangerskabskommission der skulle styrke viden om svangerskabsafbrydelse (abort) og tage stilling tilde daværenede retningslinjer og lovgivning herom. Kommissionen havde rekordhøj repræsentation af kvinder- 8 ud af 18 af kommissionens medlemmer kvinder og 6 af disse var medlemmer af Dansk Kvindesamfund. Dansk Kvindesamfund stillede krav om reformer i svangerskabslovgivningen, der skulle give dårligt stillede og enlige kvinder mulighed for at gennemføre graviditet og efterfølgende sørge for barnet og dermed forhindre at de fik foretaget illegale aborter. Arbejdet i svangerskabskommissionen førte blandt andet til oprettelsen af Mødrehjælpsinstitutioner over hele landet. For Dansk Kvindesamfund var abortspørgsmålet centralt for kvindesagen, men også kilde til interne uenigheder. En gruppe unge medlemmer med Mette Bryld og svigerinden Tine Bryld i spidsen kaldte sig Ungdomskredsen. De forsøgte at overbevise ledelsen om at tale for fri abort, og havde ambitioner om at åbne et abortkontor og arrangere abortrejser. Efter uoverensstemmelser brød de ud af Dansk Kvindesamfund og dannede Individ & Samfund, som lavede abortrejser, pjecer om hjemmeabort, og blev kimen til den danske Rødstrømpebevægelse. Dansk Kvindesamfund arbejdede herefter på højtryk for retten til abort, og organisationen havde en stor del i at aborten endelig blev lovliggjort i 1973.</Text></div>
-</div>
+                <!-- Hover tekst -->
+                <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
+                  <Text teksttype="brødtekst" color="brand"> Handelsskolen for kvinder, der uddannede kvinder til at arbejde med handel og bogholderi.</Text>
+                </div>
+              </div>
+            </li>
 
-<!-- 5. -->
-<div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Ligeløn og repræsentation</Heading></div>
-  <div class="collapse-content md:max-w-1/2"><Text teksttype="manchet" color="ink">Efter at kvinder med Grundloven i 1915 fik stemmeret og valgbarhed, dvs. mulighed for at stille op som kandidat og blive valgt vedtog Dansk Kvindesamfund en ny formålsparagraf, der fastslog at foreningen skulle arbejde for udvikling og dygtiggørelse af kvinderne til den fuldmyndige borgers ansvar og arbejde, for kvinders ligestilling med mænd samt forbedringer af kvinders og børns vilkår. Siden 1883 havde Dansk Kvindesamfund krævet ligeløn, og da ’Den store Lønningskommission’ blev nedsat i 1916, fik Dansk Kvindesamfund én kvinde ind i kommissionen. I 1919 blev den første lov om ligeløn for offentlige ansatte vedtaget og i 1921 loven om kvinders og mænds lige adgang til stillinger i det offentlige. Efter valget i 1943, hvor kun to kvinder blev valgt til Folketinget, øjede man intensiteten i arbejdet for en større kvindelig repræsentation. Siden 1919, hvor loven om kønnenes lige adgang til offentlige stillinger blev vedtaget, havde Dansk Kvindesamfund talt stærkt for, at loven også skulle gælde præsteembeder, hvilket først skete ved en lovændring i 1947.</Text></div>
-</div>
+            <!-- ITEM 2-->
+            <li class="relative flex items-start group">
+              <div class="relative z-10 mt-1 md:-left-8">
+                <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-bold-700"></div>
+              </div>
 
-<!-- 6. -->
-<div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
-  <input type="radio" name="my-accordion-3" checked="checked" />
-  <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Social og familiepolitik</Heading></div>
-  <div class="collapse-content md:max-w-1/2"><Text teksttype="manchet" color="ink">I 1950’erne og 60’erne var det især socialpolitikken, Dansk Kvindesamfund arbejdede med. I 1953 udgav de i samarbejde med Danske Kvinders Nationalråd betænkningen ”Den enlige Moder” med flere lovforslag, der senere blev vedtaget. Manglen på børnehaver var et spørgsmål, der varslede en omlægning fra familie- til arbejdsmarkedspolitik. I 1960'erne begyndte debatten, kaldet 'kvindernes borgerkrig', om kvindens rolle – hjemme eller på arbejdsmarkedet. Dansk Kvindesamfund var splittet, og moderforeningen tøvede med klare udmeldinger, men manglen på arbejdskraft afgjorde sagen. De satte fokus på ligeløn og kvinders forhold på arbejdsmarkedet i dialog med LO og Dansk Arbejdsgiverforening. Sambeskatning af ægtepar, der havde været diskuteret siden 1913, blev aktuelt, og Dansk Kvindesamfund indsamlede 70.000 underskrifter for at få det ophævet. Først i 1983 blev kvinder skattemæssigt selvstændige. Dansk Kvindesamfund arbejdede aktivt med at oprette børneinstitutioner, sådan at kvinderne kunne bruge den uddannelse, de havde fået. Børnehaverne: oprettet af de lokale kredse i Aalborg, Frederikshavn, Roskilde, Rønne, Kerteminde. Indtil for 10-20 år siden havde de også et medlem af DK siddende i deres bestyrelser. Mange kører nu videre i kommunalt regi.</Text></div>
-</div>
+              <div class="ml-10 md:ml-4">
+                <div class="font-bold underline decoration-brand underline-offset-4">
+                  <Text teksttype="manchet" color="brand">1873</Text>
+                </div>
+                <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
+                  <Text teksttype="brødtekst" color="brand"> Søndagsskolen for Kvinder, hvor arbejderkvinder blev undervist gratis i dansk, matematik og skrivning. Skolens økonomi var baseret på donationer og lærerne arbejdede frivilligt.</Text>
+                </div>
+              </div>
+            </li>
 
-</div>
+            <!-- ITEM 3-->
+            <li class="relative flex items-start group">
+              <div class="relative z-10 mt-1 md:-left-8">
+                <div class="w-4 h-4 md:w-6 md:h-6 rounded-full bg-bold-700"></div>
+              </div>
 
-</section>
-<!-- accordion slut-->
+              <div class="ml-10 md:ml-4">
+                <div class="font-bold underline decoration-brand underline-offset-4">
+                  <Text teksttype="manchet" color="brand">1876</Text>
+                </div>
+                <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
+                  <Text teksttype="brødtekst" color="brand"> Tegneskolen for Kvinder (i dag Danmarks Designskole), hvor kvinder blev undervist i tegning og andre færdigheder, der kunne give adgang til at få arbejde som kunsthåndværker fx i industrien. Arkitekten Vilhelm Klein, der sad i Dansk Kvindesamfunds styrelse, tegnede bygningen, der i dag huser et af Dansk Kvindesamfunds Krisecentre.</Text>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- timeline slut-->
 
-<!-- section "Initiativtagere til ..." start-->
-<section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
+    <!-- accordion start -->
+    <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 mt-sectiontop-M md:mt-sectiontop-D">
+      <!-- overskrift start-->
+      <div class="col-start-1 col-span-6">
+        <Heading htmlheading="h3" size="medium" color="ink">Andre kvindepolitiske kampe</Heading>
+      </div>
 
- <div class="col-start-1 col-span-6 md:col-start-3 md:col-span-5">
- <Heading htmlheading="h3" size="medium" color="ink">Initiativtagere til kvindekrisecentre</Heading>
- <Text teksttype="manchet" color="ink">Vold mod kvinder har altid været en af Dansk Kvindesamfunds vigtigste  mærkesager. Allerede i 1880'erne satte organisationen fokus på  hustrumishandling. Aktivistisk var Dansk Kvindesamfund frontløber i  besættelsen af Grevinde Danners stiftelse i 1978. Dannerstiftelsen blev  sidenhen et af de højst profilerede krisecentre i hele den  krisecenter-bevægelse, der knopskød gennem slutningen af 1970'erne og  1980'erne. Frivillige fra Dansk Kvindesamfund stiftede ligeledes Aalborg krisecenter i 1982.</Text>
- </div>
+      <!-- overskrift slut-->
 
- <div class="col-start-1 col-span-6 md:col-start-9 md:col-span-4 mt-15 md:mt-35"> 
- <Text teksttype="brødtekst" color="ink">I 2006 tog en gruppe frivillige fra Dansk Kvindesamfund initiativ til at stifte organisationen Dansk Kvindesamfunds Krisecentre. I 2007 blev krisecenteret på Frederiksberg indviet og i 2018 gjaldt det krisecentret på H.C. Andersens Boulevard i København. Tilsammen er der plads til 32 kvinder og deres børn fordelt på de to krisecentre. Dansk Kvindesamfunds Krisecentre tilbyder rådgivning og krisecenterophold. Derudover udbreder organisationen viden om kønsbaseret vold og driver politiske tiltag og projekter, som styrker hjælpen til voldsudsatte kvinder og børn.</Text>
-  <div class="mt-5 md:mt-10"> 
-  <Link href="https://www.krisecentrene.dk" target="_blank" variant="secondary">besøg dansk kvindesamfunds krisecenter</Link>
-  </div>
- </div>
+      <div class="col-start-1 col-span-6 md:col-span-12">
+        <!-- 1. -->
+        <div class="collapse collapse-plus bg-spring text-ink rounded-none border-t-2 border-b-2 border-ink">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Økonomisk råderet for kvinder</Heading></div>
+          <div class="collapse-content md:max-w-1/2"><Text color="ink">En anden sag Dansk Kvindesamfund engagerede sig i, var at gifte kvinder skulle have råderet over egne tjente penge og arv og formue, der blev bragt ind i ægteskabet. Efter stærkt pres fra Dansk Kvindesamfund blev loven, der gav gifte kvinder ret til at råde over egne tjente penge, vedtaget i 1880.</Text></div>
+        </div>
 
-</section>
-<!-- section "Initiativtagere til ..." slut-->
+        <!-- 2. -->
+        <div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Seksualnormer</Heading></div>
+          <div class="collapse-content md:max-w-1/2">
+            <Text color="ink"
+              >I 1880’erne startede en offentlig debat om samfundets seksualnormer, kaldet sædelighedsfejden. Selvom sex uden for ægteskabet var ulovligt for både mænd og kvinder, så man ofte igennem fingre med, når mænd havde sex udenfor ægteskabet eller gik til prostituerede. Dansk Kvindesamfund plæderede for lige normer for kvinder og mænd, hvilket for dem betød, at seksualitet kun hørte til inden for ægteskabet. I 1887 rejste styrelsesmedlem og stifter af Dansk Kvindesamfunds medlemsblad Kvinden & Samfundet, Elisabeth Grundtvig en kritik af mænds seksuelle aktiviteter udenfor ægteskabet, da det havde konsekvenser for kvinder (graviditeter, fødsler og kønssygdomme, der dengang kunne føre til invalidering, økonomisk ruin og social udstødelse). Det førte til sagsanlæg og brevskænderier
+              mellem hende og litteraten Georg Brandes, som mente, at kønsforhold tilhørte det private, og dermed ikke noget offentligheden skulle blande sig i eller dømme moralsk.</Text
+            >
+          </div>
+        </div>
 
-<!-- section "#metoo ..." start-->
-<section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D pb-sectionbottom">
+        <!-- 3. -->
+        <div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Kampen for kvinders valgret</Heading></div>
+          <div class="collapse-content md:max-w-1/2">
+            <Text color="ink"
+              >Kvinders valgret var kulminationen på årtiers kamp for demokratisk anerkendelse og en stor indsats fra den samlede kvindebevægelse. Ud fra ønsket om at samle så mange kvinder som muligt om kvindesagen havde Dansk Kvindesamfund forsøgt at balancere i spørgsmålet om kvinders valgret, der på det tidspunkt blev set som et radikalt krav. Først meldte man i 1887 ud, at man støttede op om valgretskravet, men trak det hurtigt tilbage, da man var bange for politikernes reaktion og for at splitte medlemsskaren, der havde forskellige holdninger. Det var først i 1906 at Dansk Kvindesamfund meldte klart ud, at man var for valgret. Den kommunale valgret kom i 1908 og stemmeret til Folketing og Landsting fulgte i 1915. Med Dansk Kvindesamfund i spidsen gik 12.000 kvinder i sejrsoptog
+              gennem Københavns gader og sluttede af på Amalienborg Slotsplads for at fejre kvinders valgret d.5. juni 1915.</Text
+            >
+          </div>
+        </div>
 
- <div class="col-start-1 col-span-6 md:col-span-4">
- <Heading htmlheading="h3" size="medium" color="ink">#Metoo, samtykkelov og psykisk vold</Heading>
- <Text teksttype="manchet" color="ink">Da #MeToo-bølgen ramte Danmark i 2017, stod Dansk Kvindesamfund i front som en af de første til at dele kampråbet #MeToo. Gennem de forskellige bølger, der har afsløret overgreb og sexistiske kulturer indenfor forskellige brancher, har vi været en stærk stemme for dem, der tør bryde tavsheden og dele deres oplevelser med sexisme og krænkelser.</Text>
- <Image 
-      class="mt-5 w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out"
-      src={omos_sidst}
-      alt="kvinde med megafonen"
-    />
-</div>
+        <!-- 4. -->
+        <div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Abort</Heading></div>
+          <div class="collapse-content md:max-w-1/2">
+            <Text color="ink"
+              >I 1932 blev der nedsat en svangerskabskommission der skulle styrke viden om svangerskabsafbrydelse (abort) og tage stilling tilde daværenede retningslinjer og lovgivning herom. Kommissionen havde rekordhøj repræsentation af kvinder- 8 ud af 18 af kommissionens medlemmer kvinder og 6 af disse var medlemmer af Dansk Kvindesamfund. Dansk Kvindesamfund stillede krav om reformer i svangerskabslovgivningen, der skulle give dårligt stillede og enlige kvinder mulighed for at gennemføre graviditet og efterfølgende sørge for barnet og dermed forhindre at de fik foretaget illegale aborter. Arbejdet i svangerskabskommissionen førte blandt andet til oprettelsen af Mødrehjælpsinstitutioner over hele landet. For Dansk Kvindesamfund var abortspørgsmålet centralt for kvindesagen, men også
+              kilde til interne uenigheder. En gruppe unge medlemmer med Mette Bryld og svigerinden Tine Bryld i spidsen kaldte sig Ungdomskredsen. De forsøgte at overbevise ledelsen om at tale for fri abort, og havde ambitioner om at åbne et abortkontor og arrangere abortrejser. Efter uoverensstemmelser brød de ud af Dansk Kvindesamfund og dannede Individ & Samfund, som lavede abortrejser, pjecer om hjemmeabort, og blev kimen til den danske Rødstrømpebevægelse. Dansk Kvindesamfund arbejdede herefter på højtryk for retten til abort, og organisationen havde en stor del i at aborten endelig blev lovliggjort i 1973.</Text
+            >
+          </div>
+        </div>
 
- <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-5 md:mt-35"> 
-    <div class="mt-5 md:mt-10"> 
-    <Text teksttype="brødtekst" color="ink">Dansk Kvindesamfund var allerede i 2013 med til at starte den danske del af den internationale kampagne Everyday Sexism Project, der samlede vidnesbyrd om sexisme i Danmark. Everyday Sexism Project er i dag en selvstændig NGO, der bekæmper og oplyser om hverdagssexisme.</Text>
-    </div>
-    <div class="mt-5 md:mt-10"> 
-    <Text teksttype="brødtekst" color="ink">Vi har også bidraget til nogle af de største ligestillingsfremskridt i nyere tid: vi var en af kræfterne bag vedtagelsen af samtykkelovgivningen, som sikrer retten til selvbestemmelse over egen krop, og definerer handlinger af seksuel karakter uden samtykke som voldægt.</Text>
-    </div>
-    <div class="mt-5 md:mt-10">
-    <Text teksttype="brødtekst" color="ink">Vi spillede en central rolle i kriminaliseringen af psykisk vold, som også er et vigtigt skridt for ligestillingen, da det anerkender ofre for de ofte usynlige magtforhold, som især kvinder rammes af i nære relationer. Loven sender et klart signal om, at også den vold, som ikke efterlader blå mærker er uacceptabel, og styrker retssikkerheden for udsatte.</Text>
-    </div>
-</div>
+        <!-- 5. -->
+        <div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Ligeløn og repræsentation</Heading></div>
+          <div class="collapse-content md:max-w-1/2">
+            <Text color="ink"
+              >Efter at kvinder med Grundloven i 1915 fik stemmeret og valgbarhed, dvs. mulighed for at stille op som kandidat og blive valgt vedtog Dansk Kvindesamfund en ny formålsparagraf, der fastslog at foreningen skulle arbejde for udvikling og dygtiggørelse af kvinderne til den fuldmyndige borgers ansvar og arbejde, for kvinders ligestilling med mænd samt forbedringer af kvinders og børns vilkår. Siden 1883 havde Dansk Kvindesamfund krævet ligeløn, og da ’Den store Lønningskommission’ blev nedsat i 1916, fik Dansk Kvindesamfund én kvinde ind i kommissionen. I 1919 blev den første lov om ligeløn for offentlige ansatte vedtaget og i 1921 loven om kvinders og mænds lige adgang til stillinger i det offentlige. Efter valget i 1943, hvor kun to kvinder blev valgt til Folketinget, øjede
+              man intensiteten i arbejdet for en større kvindelig repræsentation. Siden 1919, hvor loven om kønnenes lige adgang til offentlige stillinger blev vedtaget, havde Dansk Kvindesamfund talt stærkt for, at loven også skulle gælde præsteembeder, hvilket først skete ved en lovændring i 1947.</Text
+            >
+          </div>
+        </div>
 
-</section>
-<!-- section "#metoo ..." slut-->
+        <!-- 6. -->
+        <div class="collapse collapse-plus bg-spring text-ink border-b-2 border-ink">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="ink">Social og familiepolitik</Heading></div>
+          <div class="collapse-content md:max-w-1/2">
+            <Text color="ink"
+              >I 1950’erne og 60’erne var det især socialpolitikken, Dansk Kvindesamfund arbejdede med. I 1953 udgav de i samarbejde med Danske Kvinders Nationalråd betænkningen ”Den enlige Moder” med flere lovforslag, der senere blev vedtaget. Manglen på børnehaver var et spørgsmål, der varslede en omlægning fra familie- til arbejdsmarkedspolitik. I 1960'erne begyndte debatten, kaldet 'kvindernes borgerkrig', om kvindens rolle – hjemme eller på arbejdsmarkedet. Dansk Kvindesamfund var splittet, og moderforeningen tøvede med klare udmeldinger, men manglen på arbejdskraft afgjorde sagen. De satte fokus på ligeløn og kvinders forhold på arbejdsmarkedet i dialog med LO og Dansk Arbejdsgiverforening. Sambeskatning af ægtepar, der havde været diskuteret siden 1913, blev aktuelt, og Dansk
+              Kvindesamfund indsamlede 70.000 underskrifter for at få det ophævet. Først i 1983 blev kvinder skattemæssigt selvstændige. Dansk Kvindesamfund arbejdede aktivt med at oprette børneinstitutioner, sådan at kvinderne kunne bruge den uddannelse, de havde fået. Børnehaverne: oprettet af de lokale kredse i Aalborg, Frederikshavn, Roskilde, Rønne, Kerteminde. Indtil for 10-20 år siden havde de også et medlem af DK siddende i deres bestyrelser. Mange kører nu videre i kommunalt regi.</Text
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- accordion slut-->
 
+    <!-- section "Initiativtagere til ..." start-->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
+      <div class="col-start-1 col-span-6 md:col-start-3 md:col-span-5">
+        <Heading htmlheading="h3" size="medium" color="ink">Initiativtagere til kvindekrisecentre</Heading>
+        <Text teksttype="manchet" color="ink">Vold mod kvinder har altid været en af Dansk Kvindesamfunds vigtigste mærkesager. Allerede i 1880'erne satte organisationen fokus på hustrumishandling. Aktivistisk var Dansk Kvindesamfund frontløber i besættelsen af Grevinde Danners stiftelse i 1978. Dannerstiftelsen blev sidenhen et af de højst profilerede krisecentre i hele den krisecenter-bevægelse, der knopskød gennem slutningen af 1970'erne og 1980'erne. Frivillige fra Dansk Kvindesamfund stiftede ligeledes Aalborg krisecenter i 1982.</Text>
+      </div>
+
+      <div class="col-start-1 col-span-6 md:col-start-9 md:col-span-4 mt-15 md:mt-35">
+        <Text teksttype="brødtekst" color="ink">I 2006 tog en gruppe frivillige fra Dansk Kvindesamfund initiativ til at stifte organisationen Dansk Kvindesamfunds Krisecentre. I 2007 blev krisecenteret på Frederiksberg indviet og i 2018 gjaldt det krisecentret på H.C. Andersens Boulevard i København. Tilsammen er der plads til 32 kvinder og deres børn fordelt på de to krisecentre. Dansk Kvindesamfunds Krisecentre tilbyder rådgivning og krisecenterophold. Derudover udbreder organisationen viden om kønsbaseret vold og driver politiske tiltag og projekter, som styrker hjælpen til voldsudsatte kvinder og børn.</Text>
+        <div class="mt-5 md:mt-10">
+          <Link href="https://www.krisecentrene.dk" target="_blank" variant="secondary">besøg dansk kvindesamfunds krisecenter</Link>
+        </div>
+      </div>
+    </section>
+    <!-- section "Initiativtagere til ..." slut-->
+
+    <!-- section "#metoo ..." start-->
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D pb-sectionbottom">
+      <div class="col-start-1 col-span-6 md:col-span-4">
+        <Heading htmlheading="h3" size="medium" color="ink">#Metoo, samtykkelov og psykisk vold</Heading>
+        <Text teksttype="manchet" color="ink">Da #MeToo-bølgen ramte Danmark i 2017, stod Dansk Kvindesamfund i front som en af de første til at dele kampråbet #MeToo. Gennem de forskellige bølger, der har afsløret overgreb og sexistiske kulturer indenfor forskellige brancher, har vi været en stærk stemme for dem, der tør bryde tavsheden og dele deres oplevelser med sexisme og krænkelser.</Text>
+        <Image class="mt-5 w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_sidst} alt="kvinde med megafonen" />
+      </div>
+
+      <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-5 md:mt-35">
+        <div class="mt-5 md:mt-10">
+          <Text teksttype="brødtekst" color="ink">Dansk Kvindesamfund var allerede i 2013 med til at starte den danske del af den internationale kampagne Everyday Sexism Project, der samlede vidnesbyrd om sexisme i Danmark. Everyday Sexism Project er i dag en selvstændig NGO, der bekæmper og oplyser om hverdagssexisme.</Text>
+        </div>
+        <div class="mt-5 md:mt-10">
+          <Text teksttype="brødtekst" color="ink">Vi har også bidraget til nogle af de største ligestillingsfremskridt i nyere tid: vi var en af kræfterne bag vedtagelsen af samtykkelovgivningen, som sikrer retten til selvbestemmelse over egen krop, og definerer handlinger af seksuel karakter uden samtykke som voldægt.</Text>
+        </div>
+        <div class="mt-5 md:mt-10">
+          <Text teksttype="brødtekst" color="ink">Vi spillede en central rolle i kriminaliseringen af psykisk vold, som også er et vigtigt skridt for ligestillingen, da det anerkender ofre for de ofte usynlige magtforhold, som især kvinder rammes af i nære relationer. Loven sender et klart signal om, at også den vold, som ikke efterlader blå mærker er uacceptabel, og styrker retssikkerheden for udsatte.</Text>
+        </div>
+      </div>
+    </section>
+    <!-- section "#metoo ..." slut-->
   </main>
 </MainLayout>
