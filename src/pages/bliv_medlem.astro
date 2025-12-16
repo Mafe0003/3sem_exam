@@ -10,20 +10,21 @@ import Button from "../components/Button.astro";
 <MainLayout title="Stot" class="">
   <main class="bg-brand">
     <!-- Hero tekst -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 pt-sectiontop">
       <div class="col-start-1 col-span-4 md:col-span-7">
         <Heading htmlheading="h2" size="large" color="ink">VÆR EN DEL AF FORANDRINGEN</Heading>
       </div>
-      <div class="col-start-1 -mt-3 col-span-4 md:col-span-7">
+      <div class="col-start-1 col-span-4 md:col-span-7">
         <Text teksttype="manchet" color="ink">Som medlem bliver du en del af et nært fællesskab, der kæmper for ligestilling.</Text>
       </div>
-      <div class="col-span-full md:col-start-5 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out">
+
+      <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative md:mt-30 lg:mt-25 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out">
         <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
       </div>
     </section>
 
     <!-- Tekst sektion top -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop-M md:m-sectiontop-D md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 mt-sectiontop-M md:mt-sectiontop-D md:grid-cols-12 md:gap-5 md:mx-12">
       <div class="col-start-1 col-span-6 mt-5 md:mt-10">
         <Heading htmlheading="h3" size="large" color="ink">Bliv Medlem</Heading>
         <div class="">
@@ -34,7 +35,7 @@ import Button from "../components/Button.astro";
 
     <!-- Medlem Card 1 !Kodedele taget fra Daisiy Ui! -->
 
-    <section class="grid grid-cols-6 gap-2.5 mx-5 mt-10 md:mt-20 md:grid-cols-12 md:gap-5 md:mx-12 m-sectiontop-M md:m-sectiontop-D">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
       <div class="col-start-1 col-span-6 md:col-span-5 md:col-start-2">
         <div class="card bg-ink w-full rounded-3xl">
           <div class="card-body">
@@ -106,8 +107,8 @@ import Button from "../components/Button.astro";
     </section>
 
     <!-- FAQ -->
-    <div class="bg-bold">
-      <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 m-sectiontop-M md:m-sectiontop-D">
+    <div class="bg-bold-700">
+      <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 mt-sectiontop-M md:mt-sectiontop-D pb-sectionbottom">
         <!-- overskrift start-->
         <div class="col-start-1 col-span-6 pt-10">
           <Heading htmlheading="h3" size="medium" color="paper">FAQ</Heading>
@@ -117,7 +118,7 @@ import Button from "../components/Button.astro";
 
         <div class="col-start-1 col-span-6 md:col-span-12">
           <!-- 1. -->
-          <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
+          <div class="collapse collapse-plus bg-bold-700 text-paper rounded-none border-t-2 border-b-2 border-paper">
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Som medlem får du</Heading></div>
             <div class="collapse-content md:max-w-1/2">
@@ -129,7 +130,7 @@ import Button from "../components/Button.astro";
           </div>
 
           <!-- 2. -->
-          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+          <div class="collapse collapse-plus bg-bold-700 text-paper border-b-2 border-paper">
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Som medlem er du med til at støtte vores arbejde med</Heading></div>
             <div class="collapse-content md:max-w-1/2">
@@ -138,7 +139,7 @@ import Button from "../components/Button.astro";
           </div>
 
           <!-- 3. -->
-          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+          <div class="collapse collapse-plus bg-bold-700 text-paper border-b-2 border-paper">
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Din støtte er vigtig</Heading></div>
             <div class="collapse-content md:max-w-1/2">

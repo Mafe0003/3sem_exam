@@ -13,20 +13,20 @@ import Button from "../components/Button.astro";
 <MainLayout title="Stot" class="">
   <main class="bg-brand">
     <!-- Hero tekst -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 pt-sectiontop">
       <div class="col-start-1 col-span-4 md:col-span-6">
         <Heading htmlheading="h2" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
       </div>
       <div class="col-start-1 col-span-4 md:col-span-8 -mt-5 md:-mt-5">
         <Text teksttype="manchet" color="ink">Alle kan give et bidrag til vores arbejdet for ligestilling.</Text>
       </div>
-      <div class="col-span-full md:col-start-7 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out">
+      <div class="col-span-full md:col-start-8 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out">
         <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
       </div>
     </section>
 
     <!-- Tekst sektion -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 m-sectiontop-M md:m-sectiontop-D md:grid-cols-12 md:gap-5 md:mx-12">
+    <section class="grid grid-cols-6 gap-2.5 mx-5 mt-sectiontop-M md:mt-sectiontop-D md:grid-cols-12 md:gap-5 md:mx-12">
       <div class="col-start-1 col-span-6 md:col-span-5">
         <Heading htmlheading="h3" size="large" color="ink">Donationer</Heading>
         <div class="mt-5 mb-10 md:mt-10 md:mb-20">
@@ -181,8 +181,8 @@ import Button from "../components/Button.astro";
     </section>
 
     <!-- FAQ -->
-    <div class="bg-bold">
-      <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 m-sectiontop-M md:m-sectiontop-D">
+    <div class="bg-bold-700">
+      <section class="mx-5 md:mx-12 grid grid-cols-6 gap-2.5 md:grid-cols-12 md:gap-5 mt-sectiontop-M md:mt-sectiontop-D pb-sectionbottom">
         <!-- overskrift start-->
         <div class="col-start-1 col-span-6 pt-10">
           <Heading htmlheading="h3" size="medium" color="paper">FAQ</Heading>
@@ -192,7 +192,7 @@ import Button from "../components/Button.astro";
 
         <div class="col-start-1 col-span-6 md:col-span-12">
           <!-- 1. -->
-          <div class="collapse collapse-plus bg-bold text-paper rounded-none border-t-2 border-b-2 border-paper">
+          <div class="collapse collapse-plus bg-bold-700 text-paper rounded-none border-t-2 border-b-2 border-paper">
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Hvor meget kan jeg donere?</Heading></div>
             <div class="collapse-content md:max-w-1/2">
@@ -201,7 +201,7 @@ import Button from "../components/Button.astro";
           </div>
 
           <!-- 2. -->
-          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+          <div class="collapse collapse-plus bg-bold-700 text-paper border-b-2 border-paper">
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Hvilke betalingsmetoder kan jeg bruge?</Heading></div>
             <div class="collapse-content md:max-w-1/2">
@@ -210,7 +210,7 @@ import Button from "../components/Button.astro";
           </div>
 
           <!-- 3. -->
-          <div class="collapse collapse-plus bg-bold text-paper border-b-2 border-paper">
+          <div class="collapse collapse-plus bg-bold-700 text-paper border-b-2 border-paper">
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Heading htmlheading="h4" size="xsmall" color="paper">Er der fortrydelsesret på donationer?</Heading></div>
             <div class="collapse-content md:max-w-1/2">
