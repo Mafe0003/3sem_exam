@@ -6,30 +6,30 @@ import Button from "./Button.astro";
 let headerTheme = {
   header: "bg-ink text-brand",
   logo: "text-brand",
-  buttonPrimary: "primary",
-  buttonSecondary: "secondary",
+  buttonLeft: "primary",
+  buttonRight: "secondary",
 };
 
 if (currentPath === "om_os") {
   headerTheme = {
     header: "bg-spring text-ink",
     logo: "text-ink",
-    buttonPrimary: "tertiary",
-    buttonSecondary: "secondary",
+    buttonLeft: "tertiary",
+    buttonRight: "secondary",
   };
 } else if (currentPath === "manifest") {
   headerTheme = {
     header: "bg-bold-700 text-paper",
     logo: "text-paper",
-    buttonPrimary: "primary",
-    buttonSecondary: "white",
+    buttonLeft: "primary",
+    buttonRight: "white",
   };
 } else if (currentPath === "bliv_medlem" || currentPath === "stot_os") {
   headerTheme = {
     header: "bg-brand text-ink",
     logo: "text-ink",
-    buttonPrimary: "tertiary",
-    buttonSecondary: "white",
+    buttonLeft: "tertiary",
+    buttonRight: "white",
   };
 }
 ---
@@ -62,12 +62,12 @@ if (currentPath === "om_os") {
           <a href="/komponentbibliotek">KOMPONENTBIBLIOTEK</a>
         </li>
         <li>
-          <Button variant={headerTheme.buttonPrimary} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
+          <Button variant={headerTheme.buttonLeft} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
             <a href="/bliv_medlem">BLIV MEDLEM</a>
           </Button>
         </li>
         <li>
-          <Button variant={headerTheme.buttonSecondary} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
+          <Button variant={headerTheme.buttonRight} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
             <a href="/stot_os">STØT OS</a>
           </Button>
         </li>
@@ -93,12 +93,12 @@ if (currentPath === "om_os") {
         <a href="/komponentbibliotek" class={currentPath === "komponentbibliotek" ? "underline" : ""}> KOMPONENTBIBLIOTEK </a>
       </li>
       <li class="py-3">
-        <Button variant={headerTheme.buttonPrimary} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
+        <Button variant={headerTheme.buttonLeft} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
           <a href="/bliv_medlem">BLIV MEDLEM</a>
         </Button>
       </li>
       <li class="py-3">
-        <Button variant={headerTheme.buttonSecondary} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
+        <Button variant={headerTheme.buttonRight} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
           <a href="/stot_os">STØT OS</a>
         </Button>
       </li>
