@@ -41,10 +41,10 @@ import blog3 from "../assets/images/blog3.webp";
       <Heading htmlheading="h2" size="medium">Links:</Heading>
       <Text>Linkets tekststørrelse er responsiv og tilpasser sig skærmstørrelsen ved hjælp af Tailwinds breakpoints.</Text>
       <div class="flex flex-col gap-2 mt-4">
-        <Link href="#" variant="primary" size="large">Link variant: primary</Link>
+        <Link href="#" variant="primary">Link variant: primary</Link>
         <div class="bg-brand flex flex-col gap-2 p-4">
-          <Link href="#" variant="secondary" size="large">Link variant: secondary</Link>
-          <Link href="#" variant="tertiary" size="large">Link variant: tertiary</Link>
+          <Link href="#" variant="secondary">Link variant: secondary</Link>
+          <Link href="#" variant="tertiary">Link variant: tertiary</Link>
         </div>
       </div>
     </section>
@@ -57,12 +57,27 @@ import blog3 from "../assets/images/blog3.webp";
 
       <div class="md:grid md:grid-cols-2 gap-4 mt-4">
         <div class="flex flex-col items-start gap-2 p-4">
-          <Button variant="primary" size="large">Button variant: primary</Button>
-          <Button variant="secondary" size="large">Button variant: secondary</Button>
+          <Button variant="primary">Button variant: primary</Button>
+          <Button variant="secondary">Button variant: secondary</Button>
+          <Button variant="iconsbutton"
+            ><svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1290_4275)">
+                <path
+                  fill="currentColor"
+                  d="M13.9391 6.78882C9.98022 6.78882 6.78521 9.9839 6.78521 13.9429C6.78521 17.9018 9.98022 21.0969 13.9391 21.0969C17.898 21.0969 21.093 17.9018 21.093 13.9429C21.093 9.9839 17.898 6.78882 13.9391 6.78882ZM13.9391 18.5925C11.3789 18.5925 9.2896 16.5031 9.2896 13.9429C9.2896 11.3826 11.3789 9.29326 13.9391 9.29326C16.4993 9.29326 18.5886 11.3826 18.5886 13.9429C18.5886 16.5031 16.4993 18.5925 13.9391 18.5925ZM21.386 4.82853C20.4617 4.82853 19.7152 5.57497 19.7152 6.49931C19.7152 7.42365 20.4617 8.1701 21.386 8.1701C22.3103 8.1701 23.0568 7.42714 23.0568 6.49931C23.057 6.27982 23.014 6.06244 22.9301 5.85961C22.8463 5.65677 22.7232 5.47248 22.568 5.31727C22.4128 5.16207 22.2285 5.03901 22.0257 4.95515C21.8229 4.87128 21.6055 4.82825 21.386 4.82853ZM27.8842 13.9429C27.8842 12.0174 27.9016 10.1095 27.7935 8.18754C27.6853 5.95517 27.1761 3.97395 25.5437 2.34153C23.9078 0.705627 21.9301 0.199857 19.6978 0.0917273C17.7724 -0.0164029 15.8645 0.00103751 13.9426 0.00103751C12.0172 0.00103751 10.1093 -0.0164029 8.18739 0.0917273C5.95506 0.199857 3.97388 0.709116 2.34149 2.34153C0.705615 3.97744 0.199854 5.95517 0.0917256 8.18754C-0.0164026 10.113 0.00103749 12.0209 0.00103749 13.9429C0.00103749 15.8648 -0.0164026 17.7762 0.0917256 19.6982C0.199854 21.9305 0.709103 23.9118 2.34149 25.5442C3.97736 27.1801 5.95506 27.6859 8.18739 27.794C10.1128 27.9021 12.0207 27.8847 13.9426 27.8847C15.868 27.8847 17.7759 27.9021 19.6978 27.794C21.9301 27.6859 23.9113 27.1766 25.5437 25.5442C27.1796 23.9083 27.6853 21.9305 27.7935 19.6982C27.9051 17.7762 27.8842 15.8683 27.8842 13.9429ZM24.8147 22.1677C24.5601 22.8026 24.2531 23.2769 23.7613 23.7653C23.2695 24.2571 22.7986 24.564 22.1638 24.8187C20.3291 25.5477 15.9726 25.3837 13.9391 25.3837C11.9056 25.3837 7.54559 25.5477 5.7109 24.8221C5.07609 24.5675 4.60172 24.2606 4.1134 23.7688C3.62159 23.2769 3.31464 22.806 3.06002 22.1712C2.33451 20.333 2.49845 15.9764 2.49845 13.9429C2.49845 11.9093 2.33451 7.54922 3.06002 5.7145C3.31464 5.07967 3.62159 4.60529 4.1134 4.11696C4.6052 3.62863 5.07609 3.31819 5.7109 3.06356C7.54559 2.33804 11.9056 2.50198 13.9391 2.50198C15.9726 2.50198 20.3326 2.33804 22.1673 3.06356C22.8021 3.31819 23.2765 3.62514 23.7648 4.11696C24.2566 4.60878 24.5636 5.07967 24.8182 5.7145C25.5437 7.54922 25.3798 11.9093 25.3798 13.9429C25.3798 15.9764 25.5437 20.333 24.8147 22.1677Z"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1290_4275">
+                  <rect width="28" height="28"></rect>
+                </clipPath>
+              </defs>
+            </svg></Button
+          >
         </div>
         <div class="bg-brand flex flex-col items-start gap-2 p-4">
-          <Button variant="tertiary" size="large">Button variant: tertiary</Button>
-          <Button variant="white" size="large">Button variant: white</Button>
+          <Button variant="tertiary">Button variant: tertiary</Button>
+          <Button variant="white">Button variant: white</Button>
         </div>
       </div>
     </section>

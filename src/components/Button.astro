@@ -1,9 +1,9 @@
 ---
 // Henter parametrene fra Astro.props
-const { variant = "primary", size = "large", stylingclasses = "" } = Astro.props;
+const { variant = "primary", stylingclasses = "" } = Astro.props;
 
 //Definer den styling Tailwind classes, der gør sig gældende for alle knapper
-const buttonStyling = "rounded-full uppercase cursor-pointer border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3 relative overflow-hidden group";
+const buttonStyling = "rounded-full uppercase cursor-pointer text-base md:text-xl border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3 relative overflow-hidden group";
 
 // De forskellige varianters bg-colors (til animationens fill)
 const variantBgColor = {
@@ -31,15 +31,10 @@ const variantClasses = {
   white: "border-paper text-paper",
   iconsbutton: "py-4 md:py-5 border-brand text-brand",
 };
-
-// Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.
-const sizeClasses = {
-  large: "text-base md:text-xl",
-};
 ---
 
 <!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
-<button class:list={[stylingclasses, buttonStyling, variantClasses[variant], sizeClasses[size]]}>
+<button class:list={[stylingclasses, buttonStyling, variantClasses[variant]]}>
   <!-- Slot-indholdet -->
   <span class={`relative z-10 transition-colors duration-300 ${variantTextHover[variant]}`}>
     <slot />
