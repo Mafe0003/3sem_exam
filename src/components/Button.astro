@@ -3,7 +3,7 @@
 const { variant = "primary", size = "large", stylingclasses = "" } = Astro.props;
 
 //Definer den styling Tailwind classes, der gør sig gældende for alle knapper
-const buttonStyling = "rounded-full uppercase border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3 relative overflow-hidden group";
+const buttonStyling = "rounded-full uppercase cursor-pointer border-2 px-4 py-2.5 md:border-4 md:px-5 md:py-3 relative overflow-hidden group";
 
 // De forskellige varianters bg-colors (til animationens fill)
 const variantBgColor = {
@@ -11,6 +11,7 @@ const variantBgColor = {
   secondary: "bg-bold",
   tertiary: "bg-ink",
   white: "bg-paper",
+  iconsbutton: "bg-brand",
 };
 
 // De forskellige varianters text hover farver
@@ -19,6 +20,7 @@ const variantTextHover = {
   secondary: "group-hover:text-ink",
   tertiary: "group-hover:text-bold-300",
   white: "group-hover:text-bold-700",
+  iconsbutton: "group-hover:text-ink",
 };
 
 // Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter
@@ -27,6 +29,7 @@ const variantClasses = {
   secondary: "border-bold text-bold",
   tertiary: "border-ink text-ink",
   white: "border-paper text-paper",
+  iconsbutton: "py-4 md:py-5 border-brand text-brand",
 };
 
 // Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser.

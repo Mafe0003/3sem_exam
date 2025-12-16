@@ -7,13 +7,10 @@ import scrollimg2 from "../assets/images/scrollimg2.webp";
 import scrollimg3 from "../assets/images/scrollimg3.webp";
 import scrollimg4 from "../assets/images/scrollimg4.webp";
 import scrollimg5 from "../assets/images/scrollimg5.webp";
-import instagram from "../assets/images/instagram.svg";
-import facebook from "../assets/images/facebook.svg";
-import linkedin from "../assets/images/linkedin.svg";
-import hjerte from "../assets/images/Hjerteillustration.webp";
-import hånd from "../assets/images/Illustration af en hånd.webp";
-import håndtryk from "../assets/images/Illustration af et håndtryk.webp";
-import megafonillustration from "../assets/images/Illustration af en megafon.webp";
+import hjerte from "../assets/images/hjerteillustration.webp";
+import hånd from "../assets/images/illustration-af-en-haand.webp";
+import håndtryk from "../assets/images/illustration-af-et-haandtryk.webp";
+import megafonillustration from "../assets/images/illustration-af-en-megafon.webp";
 import megafon from "../assets/images/megafon.webp";
 import Heading from "../components/Heading.astro";
 import Text from "../components/Text.astro";
@@ -83,9 +80,50 @@ import BlogList from "../components/BlogList.astro";
       <div class="col-start-1 col-span-6 mt-10 lg:mt-0 lg:col-start-9 lg:col-span-4">
         <Heading htmlheading="h3" size="medium">Find os her</Heading>
         <div class="flex gap-7 lg:gap-10">
-          <Image src={instagram} alt="Instagram ikon" />
-          <Image src={facebook} alt="Facebook ikon" />
-          <Image src={linkedin} alt="LinkedIn ikon" />
+          <!-- button icon knapper her: -->
+          <a href="https://www.instagram.com/dansk_kvindesamfund/" target="_blank"
+            ><Button variant="iconsbutton"
+              ><svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1290_4275)">
+                  <path
+                    fill="currentColor"
+                    d="M13.9391 6.78882C9.98022 6.78882 6.78521 9.9839 6.78521 13.9429C6.78521 17.9018 9.98022 21.0969 13.9391 21.0969C17.898 21.0969 21.093 17.9018 21.093 13.9429C21.093 9.9839 17.898 6.78882 13.9391 6.78882ZM13.9391 18.5925C11.3789 18.5925 9.2896 16.5031 9.2896 13.9429C9.2896 11.3826 11.3789 9.29326 13.9391 9.29326C16.4993 9.29326 18.5886 11.3826 18.5886 13.9429C18.5886 16.5031 16.4993 18.5925 13.9391 18.5925ZM21.386 4.82853C20.4617 4.82853 19.7152 5.57497 19.7152 6.49931C19.7152 7.42365 20.4617 8.1701 21.386 8.1701C22.3103 8.1701 23.0568 7.42714 23.0568 6.49931C23.057 6.27982 23.014 6.06244 22.9301 5.85961C22.8463 5.65677 22.7232 5.47248 22.568 5.31727C22.4128 5.16207 22.2285 5.03901 22.0257 4.95515C21.8229 4.87128 21.6055 4.82825 21.386 4.82853ZM27.8842 13.9429C27.8842 12.0174 27.9016 10.1095 27.7935 8.18754C27.6853 5.95517 27.1761 3.97395 25.5437 2.34153C23.9078 0.705627 21.9301 0.199857 19.6978 0.0917273C17.7724 -0.0164029 15.8645 0.00103751 13.9426 0.00103751C12.0172 0.00103751 10.1093 -0.0164029 8.18739 0.0917273C5.95506 0.199857 3.97388 0.709116 2.34149 2.34153C0.705615 3.97744 0.199854 5.95517 0.0917256 8.18754C-0.0164026 10.113 0.00103749 12.0209 0.00103749 13.9429C0.00103749 15.8648 -0.0164026 17.7762 0.0917256 19.6982C0.199854 21.9305 0.709103 23.9118 2.34149 25.5442C3.97736 27.1801 5.95506 27.6859 8.18739 27.794C10.1128 27.9021 12.0207 27.8847 13.9426 27.8847C15.868 27.8847 17.7759 27.9021 19.6978 27.794C21.9301 27.6859 23.9113 27.1766 25.5437 25.5442C27.1796 23.9083 27.6853 21.9305 27.7935 19.6982C27.9051 17.7762 27.8842 15.8683 27.8842 13.9429ZM24.8147 22.1677C24.5601 22.8026 24.2531 23.2769 23.7613 23.7653C23.2695 24.2571 22.7986 24.564 22.1638 24.8187C20.3291 25.5477 15.9726 25.3837 13.9391 25.3837C11.9056 25.3837 7.54559 25.5477 5.7109 24.8221C5.07609 24.5675 4.60172 24.2606 4.1134 23.7688C3.62159 23.2769 3.31464 22.806 3.06002 22.1712C2.33451 20.333 2.49845 15.9764 2.49845 13.9429C2.49845 11.9093 2.33451 7.54922 3.06002 5.7145C3.31464 5.07967 3.62159 4.60529 4.1134 4.11696C4.6052 3.62863 5.07609 3.31819 5.7109 3.06356C7.54559 2.33804 11.9056 2.50198 13.9391 2.50198C15.9726 2.50198 20.3326 2.33804 22.1673 3.06356C22.8021 3.31819 23.2765 3.62514 23.7648 4.11696C24.2566 4.60878 24.5636 5.07967 24.8182 5.7145C25.5437 7.54922 25.3798 11.9093 25.3798 13.9429C25.3798 15.9764 25.5437 20.333 24.8147 22.1677Z"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1290_4275">
+                    <rect width="28" height="28"></rect>
+                  </clipPath>
+                </defs>
+              </svg></Button
+            ></a
+          >
+          <a href="https://www.facebook.com/danskkvindesamfund?locale=da_DK" target="_blank"
+            ><Button variant="iconsbutton"
+              ><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2133 27.8857H15.5781V16.1298H20.4119L20.9429 10.288H15.5781V7.33834C15.5781 6.52778 16.1786 5.87068 16.9193 5.87068H20.9429V0H16.9193C13.2156 0 10.2133 3.28549 10.2133 7.33834V10.288H7.53096L7 16.1298H10.2133V27.8857Z" fill="currentColor"></path>
+              </svg></Button
+            ></a
+          >
+          <a href="https://www.linkedin.com/company/dansk-kvindesamfund/" target="_blank"
+            ><Button variant="iconsbutton"
+              ><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1290_4277)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.3575 9.71655H15.5364V12.2966C16.2829 10.813 18.1958 9.47957 21.0696 9.47957C26.5783 9.47957 27.8857 12.4324 27.8857 17.8508V27.8857H22.3086V19.0847C22.3086 15.9992 21.5621 14.2588 19.6635 14.2588C17.0302 14.2588 15.9347 16.135 15.9347 19.0847V27.8857H10.3575V9.71655ZM0.796737 27.6487H6.37388V9.47957H0.796737V27.6487ZM7.17062 3.55484C7.17062 4.02166 7.07788 4.48393 6.8977 4.91522C6.71752 5.3465 6.45342 5.73839 6.1205 6.06849C5.78757 6.39859 5.39233 6.66043 4.95734 6.83908C4.52235 7.01772 4.05613 7.10967 3.58531 7.10967C3.11447 7.10967 2.64826 7.01772 2.21328 6.83908C1.77829 6.66043 1.38303 6.39859 1.05011 6.06849C0.717179 5.73839 0.453087 5.3465 0.272917 4.91522C0.092734 4.48393 0 4.02166 0 3.55484C0 2.61204 0.37774 1.70785 1.05011 1.04118C1.72249 0.374533 2.63442 0 3.58531 0C4.53618 0 5.44813 0.374533 6.1205 1.04118C6.79288 1.70785 7.17062 2.61204 7.17062 3.55484Z"
+                    fill="currentColor"></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1290_4277">
+                    <rect width="28" height="28" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg></Button
+            ></a
+          >
+          <!-- button icon knapper slut -->
         </div>
       </div>
     </section>
