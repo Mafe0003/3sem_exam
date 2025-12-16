@@ -29,7 +29,7 @@ import Text from "../components/Text.astro";
         <!-- Blå streg + tekst ovenpå billedet -->
         <!-- Tekst -->
         <div class="absolute bottom-4 -right-4 md:bottom-20 lg:bottom-4 bg-[url(/billedetekst.svg)]">
-          <Text teksttype="konsultativ" color="paper">Suzanne Brøgger og Tine Bryld, 1984</Text>
+          <Text teksttype="konsultativ" font="system" color="paper">Suzanne Brøgger og Tine Bryld, 1984</Text>
         </div>
       </div>
     </section>
@@ -46,14 +46,14 @@ import Text from "../components/Text.astro";
           <Image class="w-full" src={omos1} alt="Frederik og Matilde Bajer" />
 
           <div class="absolute top-4 -right-4 bg-[url(/billedetekst.svg)]">
-            <Text teksttype="konsultativ" color="paper">Fredrik og Matilde Bajer</Text>
+            <Text teksttype="konsultativ" font="system" color="paper">Fredrik og Matilde Bajer</Text>
           </div>
         </div>
         <!-- billede + tekst oveni slut-->
 
         <!-- 1. paragraph -->
         <div class="mt-5 md:mt-10">
-          <Text teksttype="manchet">Organisationen, der senere kom til at hedde Dansk Kvindesamfund, blev stiftet i 1871 i en lejlighed i Blågårdsgade 15, 1. sal. af Frederik og Matilde Bajer. Til at starte med var det som skandinavisk afdeling af den schweizisk initierede 'Association Internationale des Femmes' - en international forening for kvinders rettigheder, der ønskede lokale komiteer i Europa. Senere samme år brød man forbindelsen med moderorganisationen og dannede den selvstændige organisation, Dansk Kvindesamfund.</Text>
+          <Text teksttype="manchet" font="system">Organisationen, der senere kom til at hedde Dansk Kvindesamfund, blev stiftet i 1871 i en lejlighed i Blågårdsgade 15, 1. sal. af Frederik og Matilde Bajer. Til at starte med var det som skandinavisk afdeling af den schweizisk initierede 'Association Internationale des Femmes' - en international forening for kvinders rettigheder, der ønskede lokale komiteer i Europa. Senere samme år brød man forbindelsen med moderorganisationen og dannede den selvstændige organisation, Dansk Kvindesamfund.</Text>
         </div>
 
         <!-- 2. paragraph -->
@@ -84,7 +84,7 @@ import Text from "../components/Text.astro";
           <Image class="w-full" src={omos2} alt="grundlovsoptog fredag den 5. juli" />
 
           <div class="absolute bottom-4 -right-4 bg-[url(/billedetekst.svg)]">
-            <Text teksttype="konsultativ" color="paper">Grundlovsoptog fredag 5. Juli</Text>
+            <Text teksttype="konsultativ" font="system" color="paper">Grundlovsoptog fredag 5. Juli</Text>
           </div>
         </div>
         <!-- billede + tekst oveni slut-->
@@ -119,7 +119,7 @@ import Text from "../components/Text.astro";
               <!-- Indhold -->
               <div class="ml-10 md:ml-4">
                 <div class="font-bold underline decoration-brand underline-offset-4">
-                  <Text teksttype="manchet" color="brand">1872</Text>
+                  <Text teksttype="manchet" font="system" color="brand">1872</Text>
                 </div>
 
                 <!-- Hover tekst -->
@@ -137,7 +137,7 @@ import Text from "../components/Text.astro";
 
               <div class="ml-10 md:ml-4">
                 <div class="font-bold underline decoration-brand underline-offset-4">
-                  <Text teksttype="manchet" color="brand">1873</Text>
+                  <Text teksttype="manchet" font="system" color="brand">1873</Text>
                 </div>
                 <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
                   <Text teksttype="brødtekst" color="brand"> Søndagsskolen for Kvinder, hvor arbejderkvinder blev undervist gratis i dansk, matematik og skrivning. Skolens økonomi var baseret på donationer og lærerne arbejdede frivilligt.</Text>
@@ -153,7 +153,7 @@ import Text from "../components/Text.astro";
 
               <div class="ml-10 md:ml-4">
                 <div class="font-bold underline decoration-brand underline-offset-4">
-                  <Text teksttype="manchet" color="brand">1876</Text>
+                  <Text teksttype="manchet" font="system" color="brand">1876</Text>
                 </div>
                 <div class="mt-2 md:opacity-0 md:max-h-0 md:overflow-hidden md:group-hover:opacity-100 md:group-hover:max-h-96 transition-all duration-300">
                   <Text teksttype="brødtekst" color="brand"> Tegneskolen for Kvinder (i dag Danmarks Designskole), hvor kvinder blev undervist i tegning og andre færdigheder, der kunne give adgang til at få arbejde som kunsthåndværker fx i industrien. Arkitekten Vilhelm Klein, der sad i Dansk Kvindesamfunds styrelse, tegnede bygningen, der i dag huser et af Dansk Kvindesamfunds Krisecentre.</Text>
@@ -250,7 +250,7 @@ import Text from "../components/Text.astro";
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
       <div class="col-start-1 col-span-6 md:col-start-3 md:col-span-5">
         <Heading htmlheading="h3" size="medium" color="ink">Initiativtagere til kvindekrisecentre</Heading>
-        <Text teksttype="manchet" color="ink">Vold mod kvinder har altid været en af Dansk Kvindesamfunds vigtigste mærkesager. Allerede i 1880'erne satte organisationen fokus på hustrumishandling. Aktivistisk var Dansk Kvindesamfund frontløber i besættelsen af Grevinde Danners stiftelse i 1978. Dannerstiftelsen blev sidenhen et af de højst profilerede krisecentre i hele den krisecenter-bevægelse, der knopskød gennem slutningen af 1970'erne og 1980'erne. Frivillige fra Dansk Kvindesamfund stiftede ligeledes Aalborg krisecenter i 1982.</Text>
+        <Text teksttype="manchet" font="system" color="ink">Vold mod kvinder har altid været en af Dansk Kvindesamfunds vigtigste mærkesager. Allerede i 1880'erne satte organisationen fokus på hustrumishandling. Aktivistisk var Dansk Kvindesamfund frontløber i besættelsen af Grevinde Danners stiftelse i 1978. Dannerstiftelsen blev sidenhen et af de højst profilerede krisecentre i hele den krisecenter-bevægelse, der knopskød gennem slutningen af 1970'erne og 1980'erne. Frivillige fra Dansk Kvindesamfund stiftede ligeledes Aalborg krisecenter i 1982.</Text>
       </div>
 
       <div class="col-start-1 col-span-6 md:col-start-9 md:col-span-4 mt-15 md:mt-35">
@@ -266,7 +266,7 @@ import Text from "../components/Text.astro";
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D pb-sectionbottom">
       <div class="col-start-1 col-span-6 md:col-span-4">
         <Heading htmlheading="h3" size="medium" color="ink">#Metoo, samtykkelov og psykisk vold</Heading>
-        <Text teksttype="manchet" color="ink">Da #MeToo-bølgen ramte Danmark i 2017, stod Dansk Kvindesamfund i front som en af de første til at dele kampråbet #MeToo. Gennem de forskellige bølger, der har afsløret overgreb og sexistiske kulturer indenfor forskellige brancher, har vi været en stærk stemme for dem, der tør bryde tavsheden og dele deres oplevelser med sexisme og krænkelser.</Text>
+        <Text teksttype="manchet" font="system" color="ink">Da #MeToo-bølgen ramte Danmark i 2017, stod Dansk Kvindesamfund i front som en af de første til at dele kampråbet #MeToo. Gennem de forskellige bølger, der har afsløret overgreb og sexistiske kulturer indenfor forskellige brancher, har vi været en stærk stemme for dem, der tør bryde tavsheden og dele deres oplevelser med sexisme og krænkelser.</Text>
         <Image class="mt-5 w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_sidst} alt="kvinde med megafonen" />
       </div>
 
