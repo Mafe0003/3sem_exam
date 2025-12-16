@@ -10,18 +10,16 @@ import dankort from "../assets/images/dankort.webp";
 import Button from "../components/Button.astro";
 ---
 
-<MainLayout title="Stot" class="">
+<MainLayout title="Doner" class="">
   <main class="bg-brand">
     <!-- Hero tekst -->
-    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 pt-sectiontop">
-      <div class="col-start-1 col-span-4 md:col-span-6">
-        <Heading htmlheading="h2" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
+    <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
+      <div class="col-start-1 col-span-4 md:col-span-6 pt-sectiontop">
+        <Heading htmlheading="h1" size="large" color="ink">Støt os i kampen for ligestilling</Heading>
+        <Heading size="xsmall" color="ink">Alle kan give et bidrag til vores <br /> arbejdet for ligestilling</Heading>
       </div>
-      <div class="col-start-1 col-span-4 md:col-span-8 -mt-5 md:-mt-5">
-        <Text teksttype="manchet" color="ink">Alle kan give et bidrag til vores arbejdet for ligestilling.</Text>
-      </div>
-      <div class="col-span-full md:col-start-8 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out">
-        <Image class="md:h-auto w-full" src={hero} alt="Kvinder går hånd i hånd med armene i vejret." />
+      <div class="relative col-start-1 col-span-6 md:col-start-7 md:col-span-8 md:mt-0 lg:mt-0">
+        <Image class="intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={hero} alt="To personer drikker af kop" />
       </div>
     </section>
 
@@ -51,7 +49,7 @@ import Button from "../components/Button.astro";
 
       <!-- Form -->
 
-      <div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6">
+      <div class="col-start-1 col-span-6 md:col-start-7 md:col-span-6 md:mt-30">
         <Heading htmlheading="h4" size="xsmall" color="ink">Betalingsform</Heading>
         <div class="flex w-full border-2 md:border-4 border-ink rounded-full mt-4">
           <label class="flex-1 text-center cursor-pointer uppercase text-base md:text-xl">
@@ -173,7 +171,7 @@ import Button from "../components/Button.astro";
             <input type="radio" name="my-accordion-3" checked="checked" />
             <div class="collapse-title"><Text teksttype="brødtekst" color="ink">Læs vores betingelser her</Text></div>
             <div class="collapse-content w-full mt-5 -mb-2 md:mt-10">
-              <Text teksttype="konsultativ" color="ink">Tak for at støtte vores arbejde. Du er velkommen til at frabede dig, at vi af og til kontakter dig med nyt om Dansk Kvindesamfund. På Privatlivspolitik fortæller vi, hvordan vi passer på dine persondata, og hvordan du kan takke nej til henvendelser fra os.</Text>
+              <Text teksttype="konsultativ" color="ink">Betingelser for Medlemskab og Donation Gælder for køb af medlemskab og donation på danskkvindesamfund.dk Siden ejes og drives af Dansk Kvindesamfund CVR-nr.: 53361919 Niels Hemmingsens Gade 10 1153 København K Telefon: 21807501 E-mail: sekretariat@danskkvindesamfund.dk <br /><br />Ved betaling med kort – bortset fra Dankort – vil betalingen blive reserveret på din konto i overensstemmelse med vilkårene for dit kort, indtil vi trækker eller afviser betalingen. Du modtager en kvittering for dit medlemskab eller donation pr. e-mail.</Text>
             </div>
           </div>
         </section>
