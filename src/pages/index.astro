@@ -205,17 +205,16 @@ import BlogList from "../components/BlogList.astro";
       <BlogList />
     </section>
   </main>
+  <script>
+    /* Import af Motion One bibliotek */
+    import { animate, stagger, inView, scroll } from "motion";
+
+    /* Horisontal scroll sektion JS */
+    scroll(
+      animate("#horisontalliste", {
+        transform: ["none", "translateX(-500vw)"],
+      }),
+      { target: document.querySelector("#horisontalscrollsection") }
+    );
+  </script>
 </MainLayout>
-
-<script>
-  /* Import af Motion One bibliotek */
-  import { animate, stagger, inView, scroll } from "motion";
-
-  /* Horisontal scroll sektion JS */
-  scroll(
-    animate("#horisontalliste", {
-      transform: ["none", "translateX(-500vw)"],
-    }),
-    { target: document.querySelector("#horisontalscrollsection") }
-  );
-</script>
