@@ -24,7 +24,7 @@ import Text from "../components/Text.astro";
       <!-- billedet + tekst oveni -->
       <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-8 relative md:mt-30 lg:mt-25">
         <!-- Selve billedet -->
-        <Image class="w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_img} alt="billede af de tre kvinder i heroen på om os siden" />
+        <Image class="w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_img} loading="lazy" alt="billede af de tre kvinder i heroen på om os siden" />
 
         <!-- Blå streg + tekst ovenpå billedet -->
         <!-- Tekst -->
@@ -43,7 +43,7 @@ import Text from "../components/Text.astro";
 
         <!-- billede + tekst oveni start-->
         <div class="relative">
-          <Image class="w-full" src={omos1} alt="Frederik og Matilde Bajer" />
+          <Image class="w-full" src={omos1} loading="lazy" alt="Frederik og Matilde Bajer" />
 
           <div class="absolute top-4 -right-4 bg-[url(/billedetekst.svg)]">
             <Text teksttype="konsultativ" font="system" color="paper">Fredrik og Matilde Bajer</Text>
@@ -81,7 +81,7 @@ import Text from "../components/Text.astro";
 
         <!-- billede + tekst oveni start-->
         <div class="relative mt-5 md:mt-72">
-          <Image class="w-full" src={omos2} alt="grundlovsoptog fredag den 5. juli" />
+          <Image class="w-full" src={omos2} loading="lazy" alt="grundlovsoptog fredag den 5. juli" />
 
           <div class="absolute bottom-4 -right-4 bg-[url(/billedetekst.svg)]">
             <Text teksttype="konsultativ" font="system" color="paper">Grundlovsoptog fredag 5. Juli</Text>
@@ -267,7 +267,7 @@ import Text from "../components/Text.astro";
       <div class="col-start-1 col-span-6 md:col-span-4">
         <Heading htmlheading="h3" size="medium" color="ink">#Metoo, samtykkelov og psykisk vold</Heading>
         <Text teksttype="manchet" font="system" color="ink">Da #MeToo-bølgen ramte Danmark i 2017, stod Dansk Kvindesamfund i front som en af de første til at dele kampråbet #MeToo. Gennem de forskellige bølger, der har afsløret overgreb og sexistiske kulturer indenfor forskellige brancher, har vi været en stærk stemme for dem, der tør bryde tavsheden og dele deres oplevelser med sexisme og krænkelser.</Text>
-        <Image class="mt-5 w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_sidst} alt="kvinde med megafonen" />
+        <Image class="mt-5 w-full intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={omos_sidst} loading="lazy" alt="kvinde med megafonen" />
       </div>
 
       <div class="col-start-1 col-span-6 md:col-start-6 md:col-span-5 md:mt-35">

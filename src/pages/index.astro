@@ -23,7 +23,7 @@ import BlogList from "../components/BlogList.astro";
     <!-- hero section -->
     <div class="h-[75vh] w-[100vw] bg-[url(/hero.webp)] bg-cover bg-center relative mb-100 md:mb-130 lg:mb-90">
       <section class="grid grid-cols-6 auto-rows-[50px] gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12">
-        <Image class="z-1 col-start-1 col-span-6 row-start-2 row-span-6 md:col-start-1 md:col-span-9 lg:col-span-7 lg:row-start-2 lg:row-span-5 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={megafon} alt="Kvinde med megafon, råber ligestilling, sammenhold, frihed!" />
+        <Image class="z-1 col-start-1 col-span-6 row-start-2 row-span-6 md:col-start-1 md:col-span-9 lg:col-span-7 lg:row-start-2 lg:row-span-5 intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={megafon} loading="lazy" alt="Kvinde med megafon, råber ligestilling, sammenhold, frihed!" />
 
         <!-- støt os form START-->
         <div class="bg-bold-300 z-20 col-start-2 col-span-5 row-start-6 row-span-8 px-3 py-6 md:px-5 md:py-9 md:col-start-6 md:col-span-7 md:row-start-5 lg:col-start-9 lg:col-span-4 lg:row-start-2 lg:row-span-9">
@@ -132,7 +132,7 @@ import BlogList from "../components/BlogList.astro";
     <section class="grid grid-cols-6 gap-2.5 mx-5 md:grid-cols-12 md:gap-5 md:mx-12 mt-sectiontop-M md:mt-sectiontop-D">
       <div class="card w-full col-start-1 col-span-6 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-3">
         <figure>
-          <Image class="h-30 w-auto" src={hjerte} alt="Illustration af et hjerte" />
+          <Image class="h-30 w-auto" src={hjerte} loading="lazy" alt="Illustration af et hjerte" />
         </figure>
         <div class="card-body px-0">
           <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Bliv medlem</Heading>
@@ -145,7 +145,7 @@ import BlogList from "../components/BlogList.astro";
 
       <div class="card w-full mt-10 col-start-1 col-span-6 md:mt-0 md:col-start-7 md:col-span-6 lg:col-start-4 lg:col-span-3">
         <figure>
-          <Image class="h-30 w-auto" src={hånd} alt="Illustration af en hånd" />
+          <Image class="h-30 w-auto" src={hånd} loading="lazy" alt="Illustration af en hånd" />
         </figure>
         <div class="card-body px-0">
           <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Indsatsområder</Heading>
@@ -158,7 +158,7 @@ import BlogList from "../components/BlogList.astro";
 
       <div class="card w-full mt-10 col-start-1 col-span-6 lg:mt-0 lg:col-start-7 lg:col-span-3">
         <figure>
-          <Image class="h-30 w-auto" src={håndtryk} alt="Illustration af et håndtryk" />
+          <Image class="h-30 w-auto" src={håndtryk} loading="lazy" alt="Illustration af et håndtryk" />
         </figure>
         <div class="card-body px-0">
           <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Samarbejder</Heading>
@@ -171,7 +171,7 @@ import BlogList from "../components/BlogList.astro";
 
       <div class="card mt-10 col-start-1 col-span-6 md:col-start-7 md:col-span-6 lg:mt-0 lg:col-start-10 lg:col-span-3">
         <figure>
-          <Image class="h-30 w-auto" src={megafonillustration} alt="Illustration af en megafon" />
+          <Image class="h-30 w-auto" src={megafonillustration} loading="lazy" alt="Illustration af en megafon" />
         </figure>
         <div class="card-body px-0">
           <Heading htmlheading="h4" size="xsmall" stylingclasses="card-title">Kalder alle unge</Heading>
@@ -187,11 +187,11 @@ import BlogList from "../components/BlogList.astro";
     <div class="overflow-clip mt-sectiontop-M md:mt-sectiontop-D">
       <section id="horisontalscrollsection" class="h-[500vw]">
         <ul id="horisontalliste" class="list-none pl-0 flex sticky top-[20vh]">
-          <li class="pl-5 md:pl-12 flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg1} class="pb-5 md:pb-0 w-2/3" alt="Unges deltagelse i civilsamfundet - plakat" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Unges deltagelse i civilsamfundet - En guide til vellykket ungeinddragelse</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund har med støtte fra Dansk Folkeoplysnings Samråd udarbejdet en pjece med anbefalinger til, hvordan man skaber de bedste rammer for unges deltagelse i civilsamfundet.</Text><Link href="#" target="_self" variant="primary">Læs pjecen</Link></div></div></li>
-          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg2} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="Billede af en gruppe unge" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">KALDER ALLE UNGE</Heading><Text teksttype="brødtekst" color="brand">Vores ambassadørnetværk er for alle unge, der gerne vil blive bedre til at tale om feminisme og ligestilling. Bliv en del af netværket i København eller Aarhus.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
-          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg3} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="To kvinder fra dansk kvindesamfund i 1871" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Fra 1871 til i dag: En historie om ligestilling og rettigheder.</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund blev grundlagt i 1871 som en pioner i kampen for kvinders rettigheder i Danmark. I over 150 år har vi været med til at forme samfundet.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
-          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg4} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="Feminisme plakat" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Ligestilling i fokus: Vores holdninger og politiske prioriteringer</Heading><Text teksttype="brødtekst" color="brand">I Dansk Kvindesamfund arbejder vi med mange ligestillingspolitiske emner. Her kan du læse om vores holdninger.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
-          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg5} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" alt="3 kvinder" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Bliv en del af Kvindepanelet</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund og Gynækologisk Obstetrisk Afdeling på Odense Universitetshospital adresserer afgørende emner inden for forskning i kvinders sundhed og sygdomme samt ligestilling.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="pl-5 md:pl-12 flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg1} class="pb-5 md:pb-0 w-2/3" loading="lazy" alt="Unges deltagelse i civilsamfundet - plakat" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Unges deltagelse i civilsamfundet - En guide til vellykket ungeinddragelse</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund har med støtte fra Dansk Folkeoplysnings Samråd udarbejdet en pjece med anbefalinger til, hvordan man skaber de bedste rammer for unges deltagelse i civilsamfundet.</Text><Link href="#" target="_self" variant="primary">Læs pjecen</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg2} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" loading="lazy" alt="Billede af en gruppe unge" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">KALDER ALLE UNGE</Heading><Text teksttype="brødtekst" color="brand">Vores ambassadørnetværk er for alle unge, der gerne vil blive bedre til at tale om feminisme og ligestilling. Bliv en del af netværket i København eller Aarhus.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg3} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" loading="lazy" alt="To kvinder fra dansk kvindesamfund i 1871" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Fra 1871 til i dag: En historie om ligestilling og rettigheder.</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund blev grundlagt i 1871 som en pioner i kampen for kvinders rettigheder i Danmark. I over 150 år har vi været med til at forme samfundet.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg4} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" loading="lazy" alt="Feminisme plakat" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Ligestilling i fokus: Vores holdninger og politiske prioriteringer</Heading><Text teksttype="brødtekst" color="brand">I Dansk Kvindesamfund arbejder vi med mange ligestillingspolitiske emner. Her kan du læse om vores holdninger.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
+          <li class="flex w-full items-start lg:justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><div class="flex flex-col md:flex-row max-w-[1200px]"><Image src={scrollimg5} class="pb-5 md:pb-0 w-2/3 md:pl-30 lg:pl-0" loading="lazy" alt="3 kvinder" /><div class="md:pl-8 w-2/3 md:w-1/3"><Heading htmlheading="h4" size="small">Bliv en del af Kvindepanelet</Heading><Text teksttype="brødtekst" color="brand">Dansk Kvindesamfund og Gynækologisk Obstetrisk Afdeling på Odense Universitetshospital adresserer afgørende emner inden for forskning i kvinders sundhed og sygdomme samt ligestilling.</Text><Link href="#" target="_self" variant="primary">Læs mere</Link></div></div></li>
         </ul>
       </section>
     </div>
