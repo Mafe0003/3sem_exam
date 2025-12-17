@@ -14,32 +14,32 @@ import Button from "../components/Button.astro";
 <section class="block md:hidden">
   <div class="carousel w-full">
     <div id="slide1" class="carousel-item relative w-full gap-10">
-      <Blog src={blog1} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog2} cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
+      <Blog src={blog1} alt="Militær hjelm" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog2} alt="Kvinder der brøler" cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide4"><Button>❮</Button></a>
         <a href="#slide2"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide2" class="carousel-item relative w-full gap-10">
-      <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
-      <Blog src={blog4} cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
+      <Blog src={blog3} alt="Kvindeligt band" cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+      <Blog src={blog4} alt="Feministisk demonstration" cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide1"><Button>❮</Button></a>
         <a href="#slide3"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide3" class="carousel-item relative w-full gap-10">
-      <Blog src={blog5} cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
-      <Blog src={blog6} cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
+      <Blog src={blog5} alt="Hænder der holder om kaffekopper" cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
+      <Blog src={blog6} alt="Kvinde der skriver noter i en bog" cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide2"><Button>❮</Button></a>
         <a href="#slide4"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide4" class="carousel-item relative w-full gap-10">
-      <Blog src={blog7} cardTitle="3 Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog8} cardTitle="5 Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
+      <Blog src={blog7} alt="Kvindeligt band" cardTitle="3 Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog8} alt="Feministisk demonstration" cardTitle="5 Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide3"><Button>❮</Button></a>
         <a href="#slide1"><Button>❯</Button></a>
@@ -51,36 +51,36 @@ import Button from "../components/Button.astro";
 <section class="hidden md:block lg:hidden">
   <div class="carousel w-full">
     <div id="slide1md" class="carousel-item relative w-full gap-10">
-      <Blog src={blog1} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog2} cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
-      <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+      <Blog src={blog1} alt="Militær hjelm" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog2} alt="Kvinder der brøler" cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
+      <Blog src={blog3} alt="Kvindeligt band" cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide4md"><Button>❮</Button></a>
         <a href="#slide2md"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide2md" class="carousel-item relative w-full gap-10">
-      <Blog src={blog4} cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
-      <Blog src={blog5} cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
-      <Blog src={blog6} cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
+      <Blog src={blog4} alt="Feministisk demonstration" cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
+      <Blog src={blog5} alt="Hænder der holder om kaffekopper" cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
+      <Blog src={blog6} alt="Kvinde der skriver noter i en bog" cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide1md"><Button>❮</Button></a>
         <a href="#slide3md"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide3md" class="carousel-item relative w-full gap-10">
-      <Blog src={blog7} cardTitle="3 Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog8} cardTitle="5 Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
-      <Blog src={blog1} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog7} alt="Kvindeligt band" cardTitle="3 Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog8} alt="Feministisk demonstration" cardTitle="5 Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
+      <Blog src={blog1} alt="Militær hjelm" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide2md"><Button>❮</Button></a>
         <a href="#slide4md"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide4md" class="carousel-item relative w-full gap-10">
-      <Blog src={blog2} cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
-      <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Mar 3, 2025" />
-      <Blog src={blog4} cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
+      <Blog src={blog2} alt="Kvinder der brøler" cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
+      <Blog src={blog3} alt="Kvindeligt band" cardTitle="Pressemeddelelse: Vi Brøler!" dato="Mar 3, 2025" />
+      <Blog src={blog4} alt="Feministisk demonstration" cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide3md"><Button>❮</Button></a>
         <a href="#slide1md"><Button>❯</Button></a>
@@ -92,40 +92,40 @@ import Button from "../components/Button.astro";
 <section class="hidden lg:block">
   <div class="carousel w-full">
     <div id="slide1lg" class="carousel-item relative w-full gap-10">
-      <Blog src={blog1} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog2} cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
-      <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
-      <Blog src={blog4} cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
+      <Blog src={blog1} alt="Militær hjelm" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog2} alt="Kvinder der brøler" cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 3, 2025" />
+      <Blog src={blog3} alt="Kvindeligt band" cardTitle="Pressemeddelelse: Vi Brøler!" dato="Feb 10, 2025" />
+      <Blog src={blog4} alt="Feministisk demonstration" cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide4lg"><Button>❮</Button></a>
         <a href="#slide2lg"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide2lg" class="carousel-item relative w-full gap-10">
-      <Blog src={blog5} cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
-      <Blog src={blog6} cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
-      <Blog src={blog7} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog8} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
+      <Blog src={blog5} alt="Hænder der holder om kaffekopper" cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
+      <Blog src={blog6} alt="Kvinde der skriver noter i en bog" cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
+      <Blog src={blog7} alt="Kvindeligt band" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog8} alt="Feministisk demonstration" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide1lg"><Button>❮</Button></a>
         <a href="#slide3lg"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide3lg" class="carousel-item relative w-full gap-10">
-      <Blog src={blog1} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Feb 10, 2025" />
-      <Blog src={blog2} cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 5, 2025" />
-      <Blog src={blog3} cardTitle="Pressemeddelelse: Vi Brøler!" dato="Mar 3, 2025" />
-      <Blog src={blog4} cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
+      <Blog src={blog1} alt="Militær hjelm" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Feb 10, 2025" />
+      <Blog src={blog2} alt="Kvinder der brøler" cardTitle="Interview med Pernille Koch og Helene Kvint om Vi Brøler!" dato="Mar 5, 2025" />
+      <Blog src={blog3} alt="Kvindeligt band" cardTitle="Pressemeddelelse: Vi Brøler!" dato="Mar 3, 2025" />
+      <Blog src={blog4} alt="Feministisk demonstration" cardTitle="Høringssvar: Forsøgsordning med elektronisk kontrol" dato="Dec 18, 2024" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide2lg"><Button>❮</Button></a>
         <a href="#slide4lg"><Button>❯</Button></a>
       </div>
     </div>
     <div id="slide4lg" class="carousel-item relative w-full gap-10">
-      <Blog src={blog5} cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
-      <Blog src={blog6} cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
-      <Blog src={blog7} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
-      <Blog src={blog8} cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
+      <Blog src={blog5} alt="Hænder der holder om kaffekopper" cardTitle="Høringssvar: Bekendtgørelser om surrogataftaler" dato="Nov 26, 2024" />
+      <Blog src={blog6} alt="Kvinde der skriver noter i en bog" cardTitle="To triste rekorder vidner om, hvordan politikerne ser på ligestilling" dato="Sep 1, 2024" />
+      <Blog src={blog7} alt="Kvindeligt band" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 5, 2025" />
+      <Blog src={blog8} alt="Feministisk demonstration" cardTitle="Høringssvar: Ligestilling af værnepligten" dato="Mar 3, 2025" />
       <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href="#slide3lg"><Button>❮</Button></a>
         <a href="#slide1lg"><Button>❯</Button></a>

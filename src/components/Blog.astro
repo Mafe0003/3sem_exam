@@ -1,5 +1,5 @@
 ---
-const { cardTitle, src, dato } = Astro.props;
+const { cardTitle, src, alt, dato } = Astro.props;
 import Text from "../components/Text.astro";
 import Heading from "../components/Heading.astro";
 import { Image } from "astro:assets";
@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 <section>
   <div class="card w-full rounded-none">
     <figure>
-      <Image src={src} alt="Blog image" />
+      <Image src={src} alt={alt} />
     </figure>
     <div class="card-body px-0">
       <Text teksttype="konsultativ" color="brand">{dato}</Text>
