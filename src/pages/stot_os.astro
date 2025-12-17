@@ -19,7 +19,7 @@ import Button from "../components/Button.astro";
         <Heading size="xsmall" color="ink">Alle kan give et bidrag til vores <br /> arbejdet for ligestilling</Heading>
       </div>
       <div class="relative col-start-1 col-span-6 md:col-start-7 md:col-span-8 md:mt-0 lg:mt-0">
-        <Image class="intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={hero} alt="To personer drikker af kop" />
+        <Image class="intersect:animate-fade-up intersect:animate-once intersect:animate-duration-1500 intersect:animate-ease-out" src={hero} loading="lazy" alt="To personer drikker af kop" />
       </div>
     </section>
 
@@ -95,8 +95,8 @@ import Button from "../components/Button.astro";
                 </div>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <Image class="" src={dankort} alt="Dankort logo" />
-                <Image class="" src={visa} alt="Visa logo" />
+                <Image class="" src={dankort} loading="lazy" alt="Dankort logo" />
+                <Image class="" src={visa} loading="lazy" alt="Visa logo" />
               </div>
             </label>
           </div>
@@ -108,7 +108,7 @@ import Button from "../components/Button.astro";
               </div>
             </div>
             <div class="grid grid-cols-1 gap-2">
-              <Image class="" src={mobilepay} alt="mobilepay logo" />
+              <Image class="" src={mobilepay} loading="lazy" alt="mobilepay logo" />
             </div>
           </label>
         </div>
