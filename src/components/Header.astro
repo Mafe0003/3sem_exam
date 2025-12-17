@@ -53,22 +53,22 @@ if (currentPath === "om_os") {
     <nav id="desktopmenu" class="hidden lg:block">
       <ul class="flex flex-row gap-10 md:text-brødtekst items-center">
         <li class={`hover:underline underline-offset-4 transition-all duration-200 ${currentPath === "manifest" ? "underline" : ""}`}>
-          <a href="/manifest">MANIFEST</a>
+          <a href="manifest">MANIFEST</a>
         </li>
         <li class={`hover:underline underline-offset-4 transition-all duration-200 ${currentPath === "om_os" ? "underline" : ""}`}>
-          <a href="/om_os">OM OS</a>
+          <a href="om_os">OM OS</a>
         </li>
         <li class={`hover:underline underline-offset-4 transition-all duration-200 ${currentPath === "komponentbibliotek" ? "underline" : ""}`}>
-          <a href="/komponentbibliotek">KOMPONENTBIBLIOTEK</a>
+          <a href="komponentbibliotek">KOMPONENTBIBLIOTEK</a>
         </li>
         <li>
           <Button variant={headerTheme.buttonLeft} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
-            <a href="/bliv_medlem">BLIV MEDLEM</a>
+            <a href="bliv_medlem">BLIV MEDLEM</a>
           </Button>
         </li>
         <li>
           <Button variant={headerTheme.buttonRight} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
-            <a href="/stot_os">STØT OS</a>
+            <a href="stot_os">STØT OS</a>
           </Button>
         </li>
       </ul>
@@ -76,7 +76,7 @@ if (currentPath === "om_os") {
     <!-- menu punkter slut -->
 
     <!-- burgermenu start -->
-    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg> </button>
+    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu" aria-label="Åbn menu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg> </button>
     <!-- burgermenu slut -->
 
     <!-- dropdown menu start -->
@@ -84,22 +84,22 @@ if (currentPath === "om_os") {
   <nav id="mobilmenu" class={`flex flex-col p-5 text-konsultativ ${headerTheme.header}`} x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
     <ul class="flex flex-col text-right gap-3">
       <li class="py-3">
-        <a href="/manifest" class={currentPath === "manifest" ? "underline" : ""}> MANIFEST </a>
+        <a href="manifest" class={currentPath === "manifest" ? "underline" : ""}> MANIFEST </a>
       </li>
       <li class="py-3">
-        <a href="/om_os" class={currentPath === "om_os" ? "underline" : ""}> OM OS </a>
+        <a href="om_os" class={currentPath === "om_os" ? "underline" : ""}> OM OS </a>
       </li>
       <li class="py-3">
-        <a href="/komponentbibliotek" class={currentPath === "komponentbibliotek" ? "underline" : ""}> KOMPONENTBIBLIOTEK </a>
+        <a href="komponentbibliotek" class={currentPath === "komponentbibliotek" ? "underline" : ""}> KOMPONENTBIBLIOTEK </a>
       </li>
       <li class="py-3">
         <Button variant={headerTheme.buttonLeft} stylingclasses={currentPath === "bliv_medlem" ? "underline" : ""}>
-          <a href="/bliv_medlem">BLIV MEDLEM</a>
+          <a href="bliv_medlem">BLIV MEDLEM</a>
         </Button>
       </li>
       <li class="py-3">
         <Button variant={headerTheme.buttonRight} stylingclasses={currentPath === "stot_os" ? "underline" : ""}>
-          <a href="/stot_os">STØT OS</a>
+          <a href="stot_os">STØT OS</a>
         </Button>
       </li>
     </ul>
